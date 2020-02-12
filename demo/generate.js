@@ -22,6 +22,9 @@ var settings = {
         diffModified: '#e2b93d',
         diffDeleted: '#ef5350'
     },
+    ui: {
+        caret: "var(orange)"
+    },
     rules: [
         {
             name: 'Test 1',
