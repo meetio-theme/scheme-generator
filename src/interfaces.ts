@@ -13,38 +13,48 @@ export interface IRules {
 }
 
 export interface IGlobal {
-    active_guide?: string;
     background?: string;
-    block_caret?: string;
-    caret?: string;
-    find_highlight?: string;
-    find_highlight_foreground?: string;
-    fold_marker?: string;
     foreground?: string;
-    gutter?: string;
-    gutter_foreground?: string;
-    highlight?: string;
-    inactive_selection?: string;
     invisibles?: string;
-    line_diff_added?: string;
-    line_diff_deleted?: string;
-    line_diff_modified?: string;
-    line_diff_width?: string;
-    rulers?: string;
+    caret?: string;
+    block_caret?: string;
     line_highlight?: string;
     misspelling?: string;
+    fold_marker?: string;
+    minimap_border?: string;
+    accent?: string;
+    popup_css?: string;
+    phantom_css?: string;
+    sheet_css?: string;
+    gutter?: string;
+    gutter_foreground?: string;
+    rulers?: string;
+    line_diff_width?: string;
+    line_diff_added?: string;
+    line_diff_modified?: string;
+    line_diff_deleted?: string;
     selection?: string;
+    selection_foreground?: string;
     selection_border?: string;
-    selection_corner_radius?: string;
+    selection_border_width?: string;
+    inactive_selection?: string;
+    inactive_selection_foreground?: string;
     selection_corner_style?: string;
-    shadow?: string;
+    selection_corner_radius?: string;
+    highlight?: string;
+    find_highlight?: string;
+    find_highlight_foreground?: string;
+    guide?: string;
+    active_guide?: string;
     stack_guide?: string;
-    tags_options?: string;
-    tags_foreground?: string;
     brackets_options?: string;
     brackets_foreground?: string;
     bracket_contents_options?: string;
     bracket_contents_foreground?: string;
+    tags_options?: string;
+    tags_foreground?: string;
+    shadow?: string;
+    shadow_width?: string;
 }
 
 export interface IColors {

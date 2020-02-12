@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import * as fs from 'fs';
 import { defaultRules } from './rules';
-import * as globals from './globals';
+import { defaultGlobals } from './globals';
 
 import { IColors, IRules } from './interfaces';
 
@@ -38,7 +38,13 @@ export function generateScheme(
         fs.writeFileSync(
             `${dist}/${schemeName}.sublime-color-scheme`,
             JSON.stringify(
-                { name, author, variables: colors, globals, rules: allRules },
+                {
+                    name,
+                    author,
+                    variables: colors,
+                    globals: defaultGlobals,
+                    rules: allRules,
+                },
                 null,
                 4
             )
