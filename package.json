@@ -1,0 +1,36 @@
+{
+  "name": "@meetio/scheme-generator",
+  "version": "0.1.0",
+  "description": "Easily generate themes for Sublime Text",
+  "bugs": {
+    "url": "https://github.com/meetio-theme/scheme-generator/issues"
+  },
+  "author": "Mauro Reis Vieira <mauroreisvieira@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn run lint &&  yarn run prettier && rollup -c ",
+    "prettier": "prettier --write \"src/*.ts?(x)\"",
+    "lint": "tslint \"src/*.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/preset-env": "7.4.5",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "husky": "^4.2.1",
+    "prettier": "^1.18.2",
+    "rollup": "^1.17.0",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-typescript2": "^0.22.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  }
+}
