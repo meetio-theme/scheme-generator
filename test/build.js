@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const { generateScheme } = require('../dist/bundle.cjs.js');
+const { generateScheme } = require('../dist/index.cjs.js');
 
 const colors = {
     cursor: '#ffcc00',
