@@ -17,7 +17,7 @@ This is all that's needed to generate a great looking theme:
 ```ts
 import { generateScheme, IColor } from '@meetio/scheme-generator';
 
-const color: IColor = {
+const colors: IColor = {
     cursor: '#ffcc00',
     foreground: '#dedfe4',
     background: '#011627',
@@ -37,5 +37,5 @@ const color: IColor = {
     diffDeleted: '#ef5350',
 };
 
-generateScheme('My Scheme', 'Mauro Reis Vieira <mauroreisvieir@gmail.com>', 'My-Theme' color');
+generateScheme('My Scheme', 'Mauro Reis Vieira <mauroreisvieir@gmail.com>', 'My-Theme' colors);
 ```
