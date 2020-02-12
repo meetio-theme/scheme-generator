@@ -1,6 +1,6 @@
-import { IGlobal } from './interfaces';
+import { IUi } from './interfaces';
 
-export const defaultGlobals: IGlobal = {
+export const defaultGlobals: IUi = {
     active_guide: 'var(cyan)',
     background: 'var(background)',
     block_caret: 'var(cursor)',

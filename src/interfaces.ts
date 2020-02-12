@@ -1,4 +1,4 @@
-export interface ISchemeSetting {
+export interface ICustomToken {
     name: string;
     scope: string[];
     settings: {
@@ -8,11 +8,13 @@ export interface ISchemeSetting {
     };
 }
 
-export interface IRules {
-    [index: number]: ISchemeSetting;
+export interface ISchemeSetting {
+    colors: IColors;
+    ui?: IUi;
+    rules?: Array<ICustomToken>;
 }
 
-export interface IGlobal {
+export interface IUi {
     background?: string;
     foreground?: string;
     invisibles?: string;

@@ -3,16 +3,16 @@ import * as fs from 'fs';
 import { defaultRules } from './rules';
 import { defaultGlobals } from './globals';
 
-import { IColors, IRules } from './interfaces';
+import { ISchemeSetting } from './interfaces';
 
 export function generateScheme(
     name: string,
     author: string,
     schemeName: string,
-    colors?: IColors,
-    rules?: IRules[],
+    settings: ISchemeSetting,
     dist: string = 'schemes'
 ) {
+    const { colors, ui, rules } = settings;
     const allRules: any = [];
     const allScopes = new Set();
 
@@ -42,7 +42,7 @@ export function generateScheme(
                     name,
                     author,
                     variables: colors,
-                    globals: defaultGlobals,
+                    globals: Object.assign(defaultGlobals, ui),
                     rules: allRules,
                 },
                 null,

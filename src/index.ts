@@ -1,2 +1,2 @@
 export { generateScheme } from './schemeGenerator';
-export { IColors, ISchemeSetting, IRules } from './interfaces';
+export { IColors, ISchemeSetting, ICustomToken, IUi } from './interfaces';
