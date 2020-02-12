@@ -9,7 +9,11 @@ export default {
   output: [
     {
       file: path.resolve(`dist/index.js`),
-      format: "esm"
+      format: 'iife'
+    },
+    {
+      file: path.resolve(`dist/index.cjs.js`),
+      format: 'cjs'
     }
   ],
   plugins: [
@@ -19,5 +23,6 @@ export default {
     }),
     commonjs(),
     terser()
-  ]
+  ],
+  external: ['fs', 'path']
 };

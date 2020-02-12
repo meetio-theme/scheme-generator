@@ -1,2 +1,2 @@
-const name = 'Mauro';
-console.log('Hi ' + name);
+export { generateScheme } from './schemeGenerator';
+export { IColors, ISchemeSetting, IRules } from './interfaces';
