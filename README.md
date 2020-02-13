@@ -58,6 +58,6 @@ const settings: ISchemeSetting = {
     ],
 };
 
-generateScheme('My Scheme', 'Mauro Reis Vieira', 'My-Theme' colors);
+generateScheme('My Scheme', 'Mauro Reis Vieira', 'My-Theme' settings);
 
 ```
