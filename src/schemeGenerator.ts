@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import { defaultRules } from './rules';
 import { defaultGlobals } from './globals';
 
-import { ISchemeSetting } from './interfaces';
+import { ISchemeSetting, IRules } from './interfaces';
 
 export function generateScheme(
     name: string,
@@ -16,9 +16,9 @@ export function generateScheme(
     const allRules: any = [];
     const allScopes = new Set();
 
-    [...defaultRules, [...rules]].forEach((rule: any) => {
-        rule.forEach((item: any) => {
-            item.scope.forEach((i: any) => {
+    [...defaultRules, [...rules]].forEach((rule: Array<IRules>) => {
+        rule.forEach((item: IRules) => {
+            item.scope.forEach((i: string) => {
                 if (allScopes.has(i)) {
                     console.log(`duplicated scope: ${i} in ${item.name}`);
                 }

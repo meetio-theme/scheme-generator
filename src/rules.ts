@@ -4,6 +4,7 @@ import diff from './rules/diff';
 import git from './rules/git';
 import html from './rules/html';
 import javascript from './rules/javascript';
+import json from './rules/json';
 import markdown from './rules/markdown';
 import php from './rules/php';
 import python from './rules/python';
@@ -17,9 +18,10 @@ export const defaultRules = [
     git,
     html,
     javascript,
+    json,
     markdown,
     php,
     python,
     sql,
-    typescript
+    typescript,
 ];
