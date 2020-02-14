@@ -5,7 +5,10 @@ import git from './rules/git';
 import html from './rules/html';
 import javascript from './rules/javascript';
 import markdown from './rules/markdown';
+import php from './rules/php';
+import python from './rules/python';
 import sql from './rules/sql';
+import typescript from './rules/typescript';
 
 export const defaultRules = [
     common,
@@ -15,5 +18,8 @@ export const defaultRules = [
     html,
     javascript,
     markdown,
-    sql
+    php,
+    python,
+    sql,
+    typescript
 ];

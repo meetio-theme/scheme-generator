@@ -77,6 +77,8 @@ Other languages will probably still look alright but there is no guarantee that 
 -   TypeScript
 -   Markdown
 -   SQL
+-   PHP
+-   Python
 
 ### Development
 
