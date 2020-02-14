@@ -10,6 +10,7 @@ node_modules/
 examples/
 .rpt2_cache
 dist/
+demo/*.js
 
 # Generated files
 package-lock.json

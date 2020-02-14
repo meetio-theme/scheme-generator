@@ -37,6 +37,7 @@ const settings: ISchemeSetting = {
             scope: ['sublimelinter.gutter-mark'],
             settings: {
                 foreground: 'var(blue)',
+                font_style: 'bold glow',
             },
         },
     ],

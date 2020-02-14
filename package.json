@@ -19,8 +19,8 @@
     "scripts": {
         "build": "tsc",
         "watch": "tsc -w",
-        "generate:schemes": "tsc demo/generate.ts",
-        "build:schemes": "node demo/generate.js",
+        "build:demo": "tsc demo/generate.ts",
+        "generate:demo": "node demo/generate.js",
         "prettier": "prettier --write \"src/*.ts?(x)\"",
         "lint": "eslint \"src/*.ts\" \"src/**/*.ts\"",
         "test": "echo \"Error: no test specified\" && exit 1"

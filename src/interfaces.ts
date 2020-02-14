@@ -4,7 +4,7 @@ export interface IRules {
     settings: {
         foreground?: string;
         background?: string;
-        font_style?: 'bold' | 'italic' | 'glow';
+        font_style?: string;
     };
 }
 
