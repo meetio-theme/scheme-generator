@@ -1,17 +1,17 @@
-export interface ICustomToken {
+export interface IRules {
     name: string;
     scope: string[];
     settings: {
         foreground?: string;
         background?: string;
-        font_style?: string;
+        font_style?: 'bold' | 'italic' | 'glow';
     };
 }
 
 export interface ISchemeSetting {
     colors: IColors;
     ui?: IUi;
-    rules?: Array<ICustomToken>;
+    rules?: Array<IRules>;
 }
 
 export interface IUi {

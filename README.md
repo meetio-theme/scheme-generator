@@ -10,6 +10,9 @@ npm i @meetio/scheme-generator -D
 yarn add @meetio/scheme-generator
 ```
 
+In addition to the base settings, `ISchemeSetting` provides more options for `colors`, `ui`, and `rules`.
+There is also an overrides property, which allows you to set any color key from the [Color Scheme Reference](https://www.sublimetext.com/docs/3/color_schemes.html) directly.
+
 ### Example
 
 This is all that's needed to generate a great looking theme:
@@ -59,5 +62,30 @@ const settings: ISchemeSetting = {
 };
 
 generateScheme('My Scheme', 'Mauro Reis Vieira', 'My-Theme' settings);
-
 ```
+
+### Support
+
+Support below means that the standard Sublime Text grammar has explicit support for the languages.
+Other languages will probably still look alright but there is no guarantee that they will.
+
+-   CSS
+-   SASS/SCSS
+-   HTML
+-   JSON
+-   JavaScript
+-   TypeScript
+-   Markdown
+-   SQL
+
+### Development
+
+```bash
+# Using NPM
+npm run watch
+
+# Using Yarn
+yarn run watch
+```
+
+> Project inspired on [code-theme-generator](https://github.com/moxer-theme/code-theme-generator) for VSCode.

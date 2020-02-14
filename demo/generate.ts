@@ -22,23 +22,21 @@ const settings: ISchemeSetting = {
         diffDeleted: '#ef5350',
     },
     ui: {
-        caret: "var(orange)"
+        caret: 'var(orange)',
     },
     rules: [
         {
-            name: 'Test 1',
-            scope: ['comment, punctuation.definition.comment'],
+            name: '[SublimeLinter] Error',
+            scope: ['sublimelinter.mark.error'],
             settings: {
-                foreground: 'var(comments)',
-                font_style: 'italic',
+                foreground: 'var(invalid)',
             },
         },
         {
-            name: 'Test 2',
-            scope: ['comment, punctuation.definition.comment'],
+            name: '[SublimeLinter] Gutter mark',
+            scope: ['sublimelinter.gutter-mark'],
             settings: {
-                foreground: 'var(comments)',
-                font_style: 'italic',
+                foreground: 'var(blue)',
             },
         },
     ],
