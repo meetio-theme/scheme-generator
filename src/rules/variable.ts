@@ -3,7 +3,7 @@ export default [
         name: 'VARIABLE - A generic variable',
         scope: ['variable.other', 'variable.other.readwrite'],
         settings: {
-            foreground: 'var(red)',
+            foreground: 'var(foreground)',
         },
     },
     {

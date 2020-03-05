@@ -11,7 +11,7 @@ export default [
             'SUPPORT - While also used for base frameworks, many syntaxes apply these to scopes unrecognized classes and types, effectively scoping all user constructs.',
         scope: ['support.type', 'support.class'],
         settings: {
-            foreground: 'var(yellow)',
+            foreground: 'var(foreground)',
         },
     },
 ];

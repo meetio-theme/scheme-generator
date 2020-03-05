@@ -49,5 +49,5 @@ generateScheme(
     'Mauro Reis Vieira <mauroreisvieira@gmail.com>',
     'My-Scheme',
     settings,
-    'examples'
+    'schemes'
 );

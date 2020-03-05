@@ -79,7 +79,7 @@ export default [
             'punctuation.section.braces.end',
         ],
         settings: {
-            foreground: 'var(yellow)',
+            foreground: 'var(cyan)',
         },
     },
     {
@@ -93,7 +93,7 @@ export default [
             'punctuation.section.parens.end',
         ],
         settings: {
-            foreground: 'var(yellow)',
+            foreground: 'var(cyan)',
         },
     },
     {
@@ -104,7 +104,7 @@ export default [
             'punctuation.section.brackets.end',
         ],
         settings: {
-            foreground: 'var(yellow)',
+            foreground: 'var(cyan)',
         },
     },
     {
@@ -115,7 +115,7 @@ export default [
             'punctuation.definition.generic.end',
         ],
         settings: {
-            foreground: 'var(yellow)',
+            foreground: 'var(cyan)',
         },
     },
     {
@@ -123,7 +123,7 @@ export default [
             'META - HTML and XML tags, including punctuation, names and attributes',
         scope: ['meta.tag'],
         settings: {
-            foreground: 'var(red)',
+            foreground: 'var(foreground)',
         },
     },
     {
