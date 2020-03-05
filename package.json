@@ -19,8 +19,7 @@
     "scripts": {
         "build": "tsc",
         "watch": "tsc -w",
-        "build:demo": "tsc demo/generate.ts",
-        "generate:demo": "node demo/generate.js",
+        "build:demo": "ts-node demo/generate.ts",
         "prettier": "prettier --write \"src/*.ts?(x)\"",
         "lint": "eslint \"src/*.ts\" \"src/**/*.ts\"",
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -41,6 +40,7 @@
         "eslint": "6.8.0",
         "husky": "^4.2.1",
         "prettier": "^1.18.2",
+        "ts-node": "^8.6.2",
         "typescript": "^3.7.2"
     },
     "dependencies": {
