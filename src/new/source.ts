@@ -1,9 +1,9 @@
 export default [
     {
-        name: 'Elements that are illegal in a specific context',
-        scope: ['invalid.illegal'],
+        name: 'SOURCE - A language-specific variant of the following scope is typically applied to the entirety of a source code file',
+        scope: ['source'],
         settings: {
-            foreground: 'var(invalid)',
+            foreground: 'var(green)',
         },
     },
 ];
