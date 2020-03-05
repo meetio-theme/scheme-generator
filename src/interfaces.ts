@@ -74,6 +74,7 @@ export interface IColors {
     red: string;
     yellow: string;
     invalid: string;
+    deprecated: string;
     diffAdded: string;
     diffModified: string;
     diffDeleted: string;

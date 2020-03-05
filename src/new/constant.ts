@@ -38,7 +38,7 @@ export default [
         },
     },
     {
-        name: 'Formatting placeholders',
+        name: 'Formatting placeholders, such as those used for sprintf(), e.g. %s',
         scope: ['constant.other.placeholder'],
         settings: {
             foreground: 'var(yellow)',

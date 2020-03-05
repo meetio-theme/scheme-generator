@@ -17,6 +17,7 @@ const settings: ISchemeSetting = {
         red: '#ff757f',
         yellow: '#ffc777',
         invalid: '#d46c6c66',
+        deprecated: '#d46c6c66',
         diffAdded: '#addb67',
         diffModified: '#e2b93d',
         diffDeleted: '#ef5350',
