@@ -1,6 +1,6 @@
 export default [
     {
-        name: 'Single and multi-line comments should use, respectively',
+        name: 'COMMENTS - Single and multi-line comments should use, respectively',
         scope: ['comment.line', 'comment.block'],
         settings: {
             foreground: 'var(comments)',
@@ -9,7 +9,7 @@ export default [
     },
     {
         name:
-            'Multi-line comments used as documentation, such as Javadoc or PhpDo',
+            'COMMENTS - Multi-line comments used as documentation, such as Javadoc or PhpDo',
         scope: ['comment.block.documentation'],
         settings: {
             foreground: 'var(comments)',
@@ -17,7 +17,7 @@ export default [
         },
     },
     {
-        name: 'Symbols that delineate a comment, e.g. // or /*',
+        name: 'COMMENTS - Symbols that delineate a comment, e.g. // or /*',
         scope: ['punctuation.definition.comment'],
         settings: {
             foreground: 'var(comments)',
@@ -25,7 +25,7 @@ export default [
         },
     },
     {
-        name: 'Comments with special syntax that denote a section of code',
+        name: 'COMMENTS - Special syntax that denote a section of code',
         scope: ['meta.toc-list'],
         settings: {
             foreground: 'var(comments)',

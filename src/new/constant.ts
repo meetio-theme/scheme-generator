@@ -1,6 +1,6 @@
 export default [
     {
-        name: 'Numeric literals, including integers, floats, etc...',
+        name: 'CONSTANT - Numeric literals, including integers, floats, etc...',
         scope: [
             'constant.numeric',
             'constant.numeric.integer',
@@ -24,28 +24,28 @@ export default [
         },
     },
     {
-        name: 'Constants that are built into the language, such as booleans and null values',
+        name: 'CONSTANT - Constants that are built into the language, such as booleans and null values',
         scope: ['constant.language'],
         settings: {
             foreground: 'var(orange)',
         },
     },
     {
-        name: 'Character escapes in strings',
+        name: 'CONSTANT - Character escapes in strings',
         scope: ['constant.character.escape'],
         settings: {
             foreground: 'var(yellow)',
         },
     },
     {
-        name: 'Formatting placeholders, such as those used for sprintf(), e.g. %s',
+        name: 'CONSTANT - Formatting placeholders, such as those used for sprintf(), e.g. %s',
         scope: ['constant.other.placeholder'],
         settings: {
             foreground: 'var(yellow)',
         },
     },
     {
-        name: 'Other language-specific constant values',
+        name: 'CONSTANT - Other language-specific constant values',
         scope: ['constant.other'],
         settings: {
             foreground: 'var(cyan)',
