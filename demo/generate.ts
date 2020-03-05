@@ -3,42 +3,42 @@ import { generateScheme, ISchemeSetting } from '../dist/index';
 
 const settings: ISchemeSetting = {
     colors: {
-        cursor: '#ffcc00',
-        foreground: '#dedfe4',
-        background: '#011627',
+        cursor: '#67d2ff',
+        foreground: '#bfcdf4',
+        background: '#212339',
         comments: '#637777',
         blue: '#82aaff',
         brown: '#c17e70',
-        cyan: '#86e1fc',
+        cyan: '#50c4fa',
         green: '#c3e88d',
         orange: '#ff966c',
-        pink: '#ff5874',
+        pink: '#fca7ea',
         purple: '#c099ff',
         red: '#ff757f',
         yellow: '#ffc777',
         invalid: '#d46c6c66',
-        deprecated: '#ff98008a',
+        deprecated: '#ffc777a1',
         diffAdded: '#addb67',
         diffModified: '#e2b93d',
         diffDeleted: '#ef5350',
     },
-    ui: {
-        caret: 'var(orange)',
-    },
     rules: [
         {
-            name: '[SublimeLinter] Error',
-            scope: ['sublimelinter.mark.error'],
+            name: '[OVERWRITE] - Function declaration',
+            scope: [
+                'meta.function entity.name.function',
+                'meta.export.default meta.function-call entity.name.function',
+            ],
             settings: {
-                foreground: 'var(invalid)',
+                font_style: 'glow',
             },
         },
         {
-            name: '[SublimeLinter] Gutter mark',
-            scope: ['sublimelinter.gutter-mark'],
+            name: '[OVERWRITE] - Function call',
+            scope: ['variable.function'],
             settings: {
-                foreground: 'var(blue)',
-                font_style: 'bold glow',
+                foreground: 'var(cyan)',
+                font_style: 'glow',
             },
         },
     ],
