@@ -13,4 +13,11 @@ export default [
             foreground: 'var(blue)',
         },
     },
+    {
+        name: 'JS - Other property',
+        scope: ['source.js variable.other.property.js'],
+        settings: {
+            foreground: 'var(blue)',
+        },
+    },
 ];

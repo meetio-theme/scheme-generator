@@ -144,9 +144,9 @@ export default [
     },
     {
         name: 'META - Object',
-        scope: ['meta.definition.property'],
+        scope: ['meta.field.declaration'],
         settings: {
-            foreground: 'var(red)',
+            foreground: 'var(blue)',
         },
     },
     {
