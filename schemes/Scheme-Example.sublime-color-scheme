@@ -569,24 +569,22 @@
         {
             "name": "DIFF - Deleted",
             "scope": "diff.deleted",
-            "background": "color(var(red) alpha(0.20))",
-            "foreground_adjust": "l(+ 5%)"
+            "background": "color(var(red) alpha(0.10))"
         },
         {
             "name": "DIFF - Deleted Char",
             "scope": "diff.deleted.char",
-            "background": "color(var(red) alpha(0.20))"
+            "background": "color(var(red) alpha(0.10))"
         },
         {
             "name": "DIFF - Inserted",
             "scope": "diff.inserted",
-            "background": "color(var(green) alpha(0.20))",
-            "foreground_adjust": "l(+ 5%)"
+            "background": "color(var(green) alpha(0.10))"
         },
         {
             "name": "DIFF - Inserted Char",
             "scope": "diff.inserted.char",
-            "background": "color(var(green) alpha(0.20))"
+            "background": "color(var(green) alpha(0.10))"
         },
         {
             "name": "JS - Console, \"console\"",
