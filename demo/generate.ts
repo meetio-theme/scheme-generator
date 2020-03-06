@@ -27,14 +27,14 @@ const settings: ISchemeSetting = {
     },
     rules: [
         {
-            name: "[SublimeLinter] Error",
+            name: "SublimeLinter Error",
             scope: ["sublimelinter.mark.error"],
             settings: {
                 foreground: "var(invalid)",
             },
         },
         {
-            name: "[SublimeLinter] Gutter mark",
+            name: "SublimeLinter Gutter mark",
             scope: ["sublimelinter.gutter-mark"],
             settings: {
                 foreground: "var(blue)",
@@ -44,9 +44,9 @@ const settings: ISchemeSetting = {
 };
 
 generateScheme(
-    'My Scheme',
+    'Scheme Example',
     'Mauro Reis Vieira <mauroreisvieira@gmail.com>',
-    'My-Scheme',
+    'Scheme-Example',
     settings,
-    'schemes'
+    'examples'
 );

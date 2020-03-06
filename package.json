@@ -1,6 +1,6 @@
 {
     "name": "@meetio/scheme-generator",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Easily generate themes for Sublime Text",
     "main": "dist/index.js",
     "typescript": {
@@ -17,9 +17,9 @@
     "author": "Mauro Reis Vieira <mauroreisvieira@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "build": "tsc && npm run build:demo",
+        "build": "tsc",
         "watch": "tsc -w",
-        "build:demo": "ts-node",
+        "build:demo": "ts-node demo/generate.ts",
         "prettier": "prettier --write \"src/*.ts?(x)\"",
         "lint": "eslint \"src/*.ts\" \"src/**/*.ts\"",
         "test": "echo \"Error: no test specified\" && exit 1"
