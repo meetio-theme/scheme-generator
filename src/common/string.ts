@@ -7,7 +7,7 @@ export default [
             'string.quoted.triple',
         ],
         settings: {
-            foreground: 'var(cyan)',
+            foreground: 'var(green)',
         },
     },
     {

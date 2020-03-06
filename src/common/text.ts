@@ -3,14 +3,14 @@ export default [
         name: 'TEXT - HTML',
         scope: ['text.html'],
         settings: {
-            foreground: 'var(red)',
+            foreground: 'var(foreground)',
         },
     },
     {
         name: 'TEXT - XML',
         scope: ['text.xml'],
         settings: {
-            foreground: 'var(red)',
+            foreground: 'var(foreground)',
         },
     },
 ];

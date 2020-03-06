@@ -20,14 +20,14 @@ export default [
             'constant.numeric.complex.imaginary',
         ],
         settings: {
-            foreground: 'var(pink)',
+            foreground: 'var(orange)',
         },
     },
     {
         name: 'CONSTANT - Constants that are built into the language, such as booleans and null values',
         scope: ['constant.language'],
         settings: {
-            foreground: 'var(orange)',
+            foreground: 'var(cyan)',
         },
     },
     {
@@ -49,6 +49,13 @@ export default [
         scope: ['constant.other'],
         settings: {
             foreground: 'var(cyan)',
+        },
+    },
+    {
+        name: 'CONSTANT - Other language-specific constant values',
+        scope: ['constant.other.color'],
+        settings: {
+            foreground: 'var(pink)',
         },
     },
 ];

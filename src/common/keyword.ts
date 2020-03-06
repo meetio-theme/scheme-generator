@@ -12,17 +12,19 @@ export default [
         },
     },
     {
-        name: 'KEYWORD - Keywords that contain punctuation, such as the @ symbol in CSS',
+        name:
+            'KEYWORD - Keywords that contain punctuation, such as the @ symbol in CSS',
         scope: ['punctuation.definition.keyword'],
         settings: {
             foreground: 'var(cyan)',
         },
     },
     {
-        name: 'KEYWORD - All remaining non-operator keywords fall under the other',
+        name:
+            'KEYWORD - All remaining non-operator keywords fall under the other',
         scope: ['keyword.other'],
         settings: {
-            foreground: 'var(cyan)',
+            foreground: 'var(orange)',
         },
     },
     {
@@ -30,7 +32,6 @@ export default [
             'KEYWORD - Operators are typically symbols, so the term keyword can seem somewhat contradictory.',
         scope: [
             'keyword.operator',
-            'keyword.operator.assignment',
             'keyword.operator.arithmetic',
             'keyword.operator.bitwise',
             'keyword.operator.logical',
@@ -41,8 +42,15 @@ export default [
     },
     {
         name:
-            'KEYWORD - When the operator is a word, such as and, or or not, the following variant is used:',
+            'KEYWORD - When the operator is a word, such as and, or or not, the following variant is used',
         scope: ['keyword.operator.word'],
+        settings: {
+            foreground: 'var(cyan)',
+        },
+    },
+    {
+        name: 'KEYWORD - Operator comparison and assignment ',
+        scope: ['keyword.operator.assignment', 'keyword.operator.comparison'],
         settings: {
             foreground: 'var(cyan)',
         },

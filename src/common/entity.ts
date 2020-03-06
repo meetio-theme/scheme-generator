@@ -39,7 +39,7 @@ export default [
             'entity.name.function.destructor',
         ],
         settings: {
-            foreground: 'var(purple)',
+            foreground: 'var(blue)',
         },
     },
     {
@@ -81,7 +81,7 @@ export default [
         name: 'ENTITY - HTML, CSS and XML',
         scope: ['entity.other.attribute-name'],
         settings: {
-            foreground: 'var(purple)',
+            foreground: 'var(yellow)',
         },
     },
 ];
