@@ -32,7 +32,6 @@ export default [
             'KEYWORD - Operators are typically symbols, so the term keyword can seem somewhat contradictory.',
         scope: [
             'keyword.operator',
-            'keyword.operator.assignment',
             'keyword.operator.arithmetic',
             'keyword.operator.bitwise',
             'keyword.operator.logical',

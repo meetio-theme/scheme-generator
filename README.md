@@ -24,7 +24,7 @@ const settings: ISchemeSetting = {
     colors: {
         cursor: '#ffcc00',
         foreground: '#dedfe4',
-        background: '#011627',
+        background: '#212339',
         comments: '#637777',
         blue: '#82aaff',
         brown: '#c17e70',
@@ -35,6 +35,7 @@ const settings: ISchemeSetting = {
         purple: '#c099ff',
         red: '#ff757f',
         yellow: '#ffc777',
+        deprecated: '#ffc777a1',
         invalid: '#d46c6c66',
         diffAdded: '#addb67',
         diffModified: '#e2b93d',
