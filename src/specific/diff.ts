@@ -1,18 +1,34 @@
 export default [
     {
-        name: 'Diff - Deleted',
-        scope: ['diff.deleted', 'diff.deleted.char'],
+        name: 'DIFF - Deleted',
+        scope: ['diff.deleted'],
         settings: {
-            background: 'color(var(red) alpha(0.08))',
-            foreground: 'var(red)',
+            background: 'var(red)',
+            foreground_adjust: 'l(+ 5%)',
         },
     },
     {
-        name: 'Diff - Insert',
-        scope: ['diff.inserted', 'diff.inserted.char'],
+        name: 'DIFF - Deleted Char',
+        scope: ['diff.deleted.char'],
         settings: {
-            background: 'color(var(green) alpha(0.08))',
-            foreground: 'var(green)',
+            background: 'var(red)',
+            foreground_adjust: 'l(+ 10%)',
+        },
+    },
+    {
+        name: 'DIFF - Inserted',
+        scope: ['diff.inserted'],
+        settings: {
+            background: 'var(green)',
+            foreground_adjust: 'l(+ 5%)',
+        },
+    },
+    {
+        name: 'DIFF - Inserted Char',
+        scope: ['diff.inserted.char'],
+        settings: {
+            background: 'var(green)',
+            foreground_adjust: 'l(+ 10%)',
         },
     },
 ];

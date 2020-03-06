@@ -149,4 +149,11 @@ export default [
             foreground: 'var(red)',
         },
     },
+    {
+        name: 'META - Diff Header',
+        scope: ['meta.diff, meta.diff.header'],
+        settings: {
+            foreground: 'var(pink)',
+        },
+    },
 ];

@@ -46,6 +46,13 @@ export default [
         },
     },
     {
+        name: 'MARKUP - Deleted',
+        scope: ['markup.deleted'],
+        settings: {
+            foreground: 'var(red)',
+        },
+    },
+    {
         name: 'MARKUP - Inserted',
         scope: ['markup.inserted'],
         settings: {
@@ -53,10 +60,10 @@ export default [
         },
     },
     {
-        name: 'MARKUP - Deleted',
-        scope: ['markup.deleted'],
+        name: 'MARKUP - Changed',
+        scope: ['markup.changed'],
         settings: {
-            foreground: 'var(red)',
+            foreground: 'var(orange)',
         },
     },
     {
