@@ -17,7 +17,7 @@
     "author": "Mauro Reis Vieira <mauroreisvieira@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "build": "tsc",
+        "build": "tsc && npm run build:demo",
         "watch": "tsc -w",
         "build:demo": "ts-node demo/generate.ts",
         "prettier": "prettier --write \"src/*.ts?(x)\"",

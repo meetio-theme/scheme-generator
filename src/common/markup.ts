@@ -3,14 +3,14 @@ export default [
         name: 'MARKUP - Section headings',
         scope: ['markup.heading'],
         settings: {
-            foreground: 'var(green)',
+            foreground: 'var(cyan)',
         },
     },
     {
         name: 'MARKUP - Lists',
         scope: ['markup.list.unnumbered', 'markup.list.numbered'],
         settings: {
-            foreground: 'var(yellow)',
+            foreground: 'var(cyan)',
         },
     },
     {
@@ -42,7 +42,7 @@ export default [
         scope: ['markup.underline.link'],
         settings: {
             font_style: 'italic',
-            foreground: 'var(purple)',
+            foreground: 'var(red)',
         },
     },
     {
@@ -63,7 +63,8 @@ export default [
         name: 'MARKUP - Blockquotes and other quote styles',
         scope: ['markup.quote'],
         settings: {
-            foreground: 'var(yellow)',
+            font_style: 'italic',
+            foreground: 'var(cyan)',
         },
     },
     {
@@ -74,10 +75,36 @@ export default [
         },
     },
     {
-        name: 'MARKUP - Other markup, including constructs such as footnotes and tables',
+        name: 'MARKUP - Inline and block literal quoting',
+        scope: [
+            'meta.code-fence.definition.begin.text.markdown-gfm',
+            'meta.code-fence.definition.end.text.markdown-gfm',
+            'markup.raw.code-fence.markdown-gfm',
+        ],
+        settings: {
+            background: 'color(var(blue) alpha(0.05))',
+        },
+    },
+    {
+        name:
+            'MARKUP - Other markup, including constructs such as footnotes and tables',
         scope: ['markup.other'],
         settings: {
             foreground: 'var(yellow)',
+        },
+    },
+    {
+        name: 'MARKUP - Blockquote definition',
+        scope: ['punctuation.definition.blockquote'],
+        settings: {
+            foreground: 'var(pink)',
+        },
+    },
+    {
+        name: 'MARKUP - Blockquote definition',
+        scope: ['meta.link.inline.description'],
+        settings: {
+            foreground: 'var(green)',
         },
     },
 ];

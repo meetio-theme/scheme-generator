@@ -1,5 +1,13 @@
 export default [
     {
+        name:
+            'META - HTML and XML tags, including punctuation, names and attributes',
+        scope: ['meta.tag'],
+        settings: {
+            foreground: 'var(foreground)',
+        },
+    },
+    {
         name: 'META - The complete contents of data structures',
         scope: [
             'meta.class',
@@ -65,7 +73,7 @@ export default [
             'META - Function names, including the full path, and all parameters',
         scope: ['meta.function-call'],
         settings: {
-            foreground: 'var(cyan)',
+            foreground: 'var(yellow)',
         },
     },
     {
@@ -102,6 +110,8 @@ export default [
             'meta.brackets',
             'punctuation.section.brackets.begin',
             'punctuation.section.brackets.end',
+            'meta.array.literal',
+            'meta.brace.square',
         ],
         settings: {
             foreground: 'var(cyan)',
@@ -119,18 +129,24 @@ export default [
         },
     },
     {
-        name:
-            'META - HTML and XML tags, including punctuation, names and attributes',
-        scope: ['meta.tag'],
+        name: 'META - Paragraphs in markup',
+        scope: ['meta.paragraph'],
         settings: {
             foreground: 'var(foreground)',
         },
     },
     {
-        name: 'META - Paragraphs in markup',
-        scope: ['meta.paragraph'],
+        name: 'META - Object',
+        scope: ['meta.objectliteral', 'meta.object.member'],
         settings: {
-            foreground: 'var(orange)',
+            foreground: 'var(blue)',
+        },
+    },
+    {
+        name: 'META - Object',
+        scope: ['meta.definition.property'],
+        settings: {
+            foreground: 'var(red)',
         },
     },
 ];

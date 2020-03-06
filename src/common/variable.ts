@@ -31,7 +31,7 @@ export default [
         name: 'VARIABLE - Parameters to a function or methods',
         scope: ['variable.parameter'],
         settings: {
-            foreground: 'var(blue)',
+            foreground: 'var(pink)',
         },
     },
     {
@@ -45,7 +45,7 @@ export default [
         name: 'VARIABLE - Function and method name',
         scope: ['variable.function'],
         settings: {
-            foreground: 'var(purple)',
+            foreground: 'var(blue)',
         },
     },
     {

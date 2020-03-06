@@ -1,17 +1,24 @@
-import comment from './rules/comment';
-import constant from './rules/constant';
-import entity from './rules/entity';
-import invalid from './rules/invalid';
-import keyword from './rules/keyword';
-import markup from './rules/markup';
-import meta from './rules/meta';
-import punctuation from './rules/punctuation';
-import source from './rules/source';
-import storage from './rules/storage';
-import string from './rules/string';
-import support from './rules/support';
-import text from './rules/text';
-import variable from './rules/variable';
+import comment from './common/comment';
+import constant from './common/constant';
+import entity from './common/entity';
+import invalid from './common/invalid';
+import keyword from './common/keyword';
+import markup from './common/markup';
+import meta from './common/meta';
+import punctuation from './common/punctuation';
+import source from './common/source';
+import storage from './common/storage';
+import string from './common/string';
+import support from './common/support';
+import text from './common/text';
+import variable from './common/variable';
+
+import html from './specific/html';
+import css from './specific/css';
+import js from './specific/js';
+import json from './specific/json';
+import python from './specific/python';
+import vue from './specific/vue';
 
 export const defaultRules = [
     comment,
@@ -28,4 +35,10 @@ export const defaultRules = [
     support,
     text,
     variable,
+    html,
+    css,
+    js,
+    json,
+    python,
+    vue,
 ];

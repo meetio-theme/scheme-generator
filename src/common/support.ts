@@ -9,7 +9,7 @@ export default [
     {
         name:
             'SUPPORT - While also used for base frameworks, many syntaxes apply these to scopes unrecognized classes and types, effectively scoping all user constructs.',
-        scope: ['support.type', 'support.class'],
+        scope: ['support.type', 'support.class', 'support.variable.property'],
         settings: {
             foreground: 'var(foreground)',
         },
