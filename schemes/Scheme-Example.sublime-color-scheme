@@ -321,6 +321,11 @@
             "foreground": "var(yellow)"
         },
         {
+            "name": "Meta - Mapping Key",
+            "scope": "meta.mapping.key",
+            "foreground": "var(blue)"
+        },
+        {
             "name": "META - Sections of code delineated by curly braces",
             "scope": "meta.block,punctuation.section.block.begin,punctuation.section.block.end,meta.braces,punctuation.section.braces.begin,punctuation.section.braces.end",
             "foreground": "var(cyan)"
@@ -629,11 +634,6 @@
         {
             "name": "Python - Function",
             "scope": "source.python meta.function.python entity.name.function.python support.function.magic.python",
-            "foreground": "var(blue)"
-        },
-        {
-            "name": "Vue - Console, \"console\"",
-            "scope": "text.html.vue meta.mapping.key",
             "foreground": "var(blue)"
         },
         {

@@ -77,6 +77,13 @@ export default [
         },
     },
     {
+        name: 'Meta - Mapping Key',
+        scope: ['meta.mapping.key'],
+        settings: {
+            foreground: 'var(blue)',
+        },
+    },
+    {
         name: 'META - Sections of code delineated by curly braces',
         scope: [
             'meta.block',

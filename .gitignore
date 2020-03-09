@@ -7,7 +7,6 @@ Thumbs.db
 
 # Generated folders
 node_modules/
-examples/
 .rpt2_cache
 dist/
 demo/*.js
