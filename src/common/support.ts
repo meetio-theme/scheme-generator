@@ -14,4 +14,18 @@ export default [
             foreground: 'var(foreground)',
         },
     },
+    {
+        name: 'SUPPORT - Class Component',
+        scope: ['support.class.component'],
+        settings: {
+            foreground: 'var(purple)',
+        },
+    },
+    {
+        name: 'SUPPORT - Type Primitive',
+        scope: ['support.type.primitive'],
+        settings: {
+            foreground: 'var(yellow)',
+        },
+    },
 ];

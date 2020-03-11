@@ -491,6 +491,16 @@
             "foreground": "var(foreground)"
         },
         {
+            "name": "SUPPORT - Class Component",
+            "scope": "support.class.component",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "SUPPORT - Type Primitive",
+            "scope": "support.type.primitive",
+            "foreground": "var(yellow)"
+        },
+        {
             "name": "TEXT - HTML",
             "scope": "text.html",
             "foreground": "var(foreground)"
