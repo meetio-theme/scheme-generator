@@ -45,4 +45,4 @@ export const defaultRules = [
     jsx,
     python,
     vue,
-][0];
+];

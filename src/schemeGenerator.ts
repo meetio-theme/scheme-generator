@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 import * as fs from 'fs';
 import chalk from 'chalk';
+import { defaultRules } from './rules';
 import { defaultGlobals } from './globals';
 
 import { ISchemeSetting, IRules } from './interfaces';
@@ -17,7 +18,7 @@ export function generateScheme(
     const allScopes = new Set();
     const log = console.log;
 
-    [rules].forEach((rule: Array<IRules>) => {
+    [...defaultRules, [...rules]].forEach((rule: Array<IRules>) => {
         rule.forEach((item: IRules) => {
             item.scope.forEach((i: string) => {
                 if (allScopes.has(i)) {
