@@ -1,5 +1,26 @@
 /* eslint-disable no-undef */
-import { generateScheme, ISchemeSetting } from '../dist/index';
+import { generateScheme, defaultRules, ISchemeSetting } from '../dist/index';
+
+const rules = [
+    ...defaultRules,
+    ...[
+        {
+            name: '[OVERWRITE] - Function declaration',
+            scope: ['meta.function-call', 'entity.name.function'],
+            settings: {
+                font_style: 'glow',
+            },
+        },
+        {
+            name: '[OVERWRITE] - Function call',
+            scope: ['variable.function'],
+            settings: {
+                foreground: 'var(cyan)',
+                font_style: 'glow',
+            },
+        },
+    ],
+];
 
 const settings: ISchemeSetting = {
     colors: {
@@ -25,23 +46,7 @@ const settings: ISchemeSetting = {
     ui: {
         caret: 'var(orange)',
     },
-    rules: [
-        {
-            name: '[OVERWRITE] - Function declaration',
-            scope: ['meta.function-call', 'entity.name.function'],
-            settings: {
-                font_style: 'glow',
-            },
-        },
-        {
-            name: '[OVERWRITE] - Function call',
-            scope: ['variable.function'],
-            settings: {
-                foreground: 'var(cyan)',
-                font_style: 'glow',
-            },
-        },
-    ],
+    rules
 };
 
 generateScheme(
