@@ -511,6 +511,11 @@
             "foreground": "var(foreground)"
         },
         {
+            "name": "VARIABLE - Declaration",
+            "scope": "variable.declaration",
+            "foreground": "var(brown)"
+        },
+        {
             "name": "VARIABLE - A generic variable",
             "scope": "variable.other,variable.other.readwrite",
             "foreground": "var(foreground)"

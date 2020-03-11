@@ -1,5 +1,12 @@
 export default [
     {
+        name: 'VARIABLE - Declaration',
+        scope: ['variable.declaration'],
+        settings: {
+            foreground: 'var(brown)',
+        },
+    },
+    {
         name: 'VARIABLE - A generic variable',
         scope: ['variable.other', 'variable.other.readwrite'],
         settings: {

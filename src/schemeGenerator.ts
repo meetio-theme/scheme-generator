@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 import * as fs from 'fs';
+import chalk from 'chalk';
 import { defaultRules } from './rules';
 import { defaultGlobals } from './globals';
 
@@ -15,12 +16,19 @@ export function generateScheme(
     const { colors, ui, rules } = settings;
     const allRules: any = [];
     const allScopes = new Set();
+    const log = console.log;
 
     [...defaultRules, [...rules]].forEach((rule: Array<IRules>) => {
         rule.forEach((item: IRules) => {
             item.scope.forEach((i: string) => {
                 if (allScopes.has(i)) {
-                    console.log(`duplicated scope: ${i} in ${item.name}`);
+                    log(
+                        chalk.bold.red('‼DUPLICATED‼') +
+                            ' － Scope [' +
+                            chalk.bold.green(i) +
+                            '] overwrite by: ' +
+                            chalk.yellow(item.name)
+                    );
                 }
                 allScopes.add(i);
             });
