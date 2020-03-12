@@ -19,7 +19,7 @@
     "scripts": {
         "build": "tsc",
         "watch": "tsc -w",
-        "build:demo": "npm run build && ts-node demo/generate.ts",
+        "build:scheme": "npm run build && ts-node demo/generate.ts",
         "prettier": "prettier --write \"src/*.ts?(x)\"",
         "lint": "eslint \"src/*.ts\" \"src/**/*.ts\"",
         "test": "echo \"Error: no test specified\" && exit 1"
