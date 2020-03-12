@@ -23,10 +23,10 @@ export function generateScheme(
             item.scope.forEach((i: string) => {
                 if (allScopes.has(i)) {
                     log(
-                        chalk.bold.red('‼DUPLICATED‼') +
-                            ' － Scope [' +
+                        chalk.bold.bgRed(' ‼ERROR‼ ') +
+                            ' － Duplicated scope [' +
                             chalk.bold.green(i) +
-                            '] overwrite by: ' +
+                            '] overwrite by ' +
                             chalk.yellow(item.name)
                     );
                 }
@@ -43,19 +43,30 @@ export function generateScheme(
     });
 
     fs.mkdir(dist, () => {
-        fs.writeFileSync(
-            `${dist}/${schemeName}.sublime-color-scheme`,
-            JSON.stringify(
-                {
-                    name,
-                    author,
-                    variables: colors,
-                    globals: Object.assign(defaultGlobals, ui),
-                    rules: allRules,
-                },
-                null,
-                4
-            )
-        );
+        try {
+            fs.writeFileSync(
+                `${dist}/${schemeName}.sublime-color-scheme`,
+                JSON.stringify(
+                    {
+                        name,
+                        author,
+                        variables: colors,
+                        globals: Object.assign(defaultGlobals, ui),
+                        rules: allRules,
+                    },
+                    null,
+                    4
+                )
+            );
+            log(
+                chalk.bold.bgGreen(' SUCCESS ') +
+                    ' － Scheme ' +
+                    chalk.bold.cyan(`${schemeName}.sublime-color-scheme`) +
+                    ' created in ' +
+                    chalk.underline.yellow(dist) + ' folder'
+            );
+        } catch (e) {
+            log(chalk.bold.red(e));
+        }
     });
 }
