@@ -29,6 +29,8 @@ export default [
         scope: [
             'punctuation.section.embedded.begin',
             'punctuation.section.embedded.end',
+            'meta.interpolation punctuation.section.interpolation.begin',
+            'meta.interpolation punctuation.section.interpolation.end',
         ],
         settings: {
             foreground: 'var(cyan)',
