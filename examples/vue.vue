@@ -14,6 +14,7 @@ export default {
     },
     data() {
         return {
+            title: 'Hello World',
             employee: {
                 name: '',
                 email: '',
