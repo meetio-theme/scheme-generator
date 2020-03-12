@@ -382,7 +382,7 @@
         },
         {
             "name": "PUNCTUATION - Embedded eg: {}",
-            "scope": "punctuation.section.embedded.begin,punctuation.section.embedded.end",
+            "scope": "punctuation.section.embedded.begin,punctuation.section.embedded.end,meta.interpolation punctuation.section.interpolation.begin,meta.interpolation punctuation.section.interpolation.end",
             "foreground": "var(cyan)"
         },
         {
