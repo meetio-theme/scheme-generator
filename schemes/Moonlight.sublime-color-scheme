@@ -679,7 +679,6 @@
         {
             "name": "[OVERWRITE] - Function call",
             "scope": "variable.function",
-            "foreground": "var(cyan)",
             "font_style": "glow"
         }
     ]

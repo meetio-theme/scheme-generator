@@ -36,7 +36,6 @@ const settings: ISchemeSetting = {
             name: '[OVERWRITE] - Function call',
             scope: ['variable.function'],
             settings: {
-                foreground: 'var(cyan)',
                 font_style: 'glow',
             },
         },
