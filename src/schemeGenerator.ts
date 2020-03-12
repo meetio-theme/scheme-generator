@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import * as fs from 'fs';
-import chalk from 'chalk';
+import { duplicated, success, error } from './utils';
 import { defaultRules } from './rules';
 import { defaultGlobals } from './globals';
 
@@ -16,19 +16,12 @@ export function generateScheme(
     const { colors, ui, rules } = settings;
     const allRules: Array<{ name: string; scope: string }> = [];
     const allScopes = new Set();
-    const log = console.log;
 
     [...defaultRules, [...rules]].forEach((rule: Array<IRules>) => {
         rule.forEach((item: IRules) => {
             item.scope.forEach((i: string) => {
                 if (allScopes.has(i)) {
-                    log(
-                        chalk.bold.bgRed(' ‼ERROR‼ ') +
-                            ' － Duplicated scope [' +
-                            chalk.bold.green(i) +
-                            '] overwrite by ' +
-                            chalk.yellow(item.name)
-                    );
+                    duplicated(i, item.name);
                 }
                 allScopes.add(i);
             });
@@ -58,15 +51,9 @@ export function generateScheme(
                     4
                 )
             );
-            log(
-                chalk.bold.bgGreen(' SUCCESS ') +
-                    ' － Scheme ' +
-                    chalk.bold.cyan(`${schemeName}.sublime-color-scheme`) +
-                    ' created in ' +
-                    chalk.underline.yellow(dist) + ' folder'
-            );
+            success(schemeName, dist);
         } catch (e) {
-            log(chalk.bold.red(e));
+            error(e);
         }
     });
 }

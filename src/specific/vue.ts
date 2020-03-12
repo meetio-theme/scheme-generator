@@ -1,6 +1,6 @@
 export default [
     {
-        name: 'Vue - Console, "console"',
+        name: 'VUE - Console, "console"',
         scope: ['text.html.vue meta.property.object'],
         settings: {
             foreground: 'var(foreground)',

@@ -1,14 +1,35 @@
 export default [
     {
-        name: 'Python - Declaration function',
-        scope: ['source.python meta.function.python storage.type.function.python keyword.declaration.function.python'],
+        name: 'PYTHON - Keyword declaration function',
+        scope: ['source.python keyword.declaration.function.python'],
         settings: {
             foreground: 'var(purple)',
         },
     },
     {
-        name: 'Python - Function',
-        scope: ['source.python meta.function.python entity.name.function.python support.function.magic.python'],
+        name: 'PYTHON - Function magic',
+        scope: ['source.python support.function.magic.python'],
+        settings: {
+            foreground: 'var(blue)',
+        },
+    },
+    {
+        name: 'PYTHON - Function',
+        scope: ['source.python meta.function.python'],
+        settings: {
+            foreground: 'var(blue)',
+        },
+    },
+    {
+        name: 'PYTHON - Qualified name',
+        scope: ['source.python meta.qualified-name.python'],
+        settings: {
+            foreground: 'var(foreground)',
+        },
+    },
+    {
+        name: 'PYTHON - Generic name',
+        scope: ['source.python variable.function.python meta.generic-name.python'],
         settings: {
             foreground: 'var(blue)',
         },
