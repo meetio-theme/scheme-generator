@@ -10,7 +10,6 @@ export const duplicated = (scope: string, name: string) =>
     );
 
 export const success = (scheme: string, folder: string) => {
-    console.log();
     console.log(
         chalk.bold.bgGreen(' SUCCESS ') +
             ' － Scheme ' +
@@ -19,7 +18,6 @@ export const success = (scheme: string, folder: string) => {
             chalk.underline.yellow(folder) +
             ' folder'
     );
-    console.log();
 };
 
 export const error = (error: string) => console.log(chalk.bold.red(error));
