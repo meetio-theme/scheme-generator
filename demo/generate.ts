@@ -43,9 +43,9 @@ const settings: ISchemeSetting = {
 };
 
 generateScheme(
-    'Moonlight',
+    'Scheme-Example',
     'Mauro Reis Vieira <mauroreisvieira@gmail.com>',
-    'Moonlight',
+    'Scheme-Example',
     settings,
     'schemes'
 );
