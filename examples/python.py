@@ -59,7 +59,7 @@ copy_local(
     data = _data,
     include = include,
     pretend = pretend,
-    force = force,
+    orce = force,
     skip = skip,
     quiet = quiet
 )
@@ -70,6 +70,7 @@ def ask_ok(prompt, retries = 4, reminder = 'Please try again!'):
     while True:
         ok = input(prompt)
         if ok in ('y', 'ye', 'yes'):
+            val = re.sub("-", "", str(uii.uiiid()))
             return True
         if ok in ('n', 'no', 'nop', 'nope'):
             return False

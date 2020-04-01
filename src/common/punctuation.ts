@@ -17,8 +17,10 @@ export default [
         name: 'PUNCTUATION - Parameters eg: ()',
         scope: [
             'punctuation.definition.parameters.begin',
-            'punctuation.definition.block',
             'punctuation.definition.parameters.end',
+            'punctuation.definition.block',
+            'punctuation.definition.metadata.begin',
+            'punctuation.definition.metadata.end',
         ],
         settings: {
             foreground: 'var(cyan)',
@@ -41,6 +43,20 @@ export default [
         scope: [
             'punctuation.definition.tag.begin',
             'punctuation.definition.tag.end',
+        ],
+        settings: {
+            foreground: 'var(cyan)',
+        },
+    },
+    {
+        name: 'PUNCTUATION - Parameters eg: []',
+        scope: [
+            'punctuation.section.sequence.begin',
+            'punctuation.section.sequence.end',
+            'punctuation.definition.link.begin',
+            'punctuation.definition.link.end',
+            'punctuation.definition.image.begin',
+            'punctuation.definition.image.end',
         ],
         settings: {
             foreground: 'var(cyan)',

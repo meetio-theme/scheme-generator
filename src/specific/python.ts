@@ -15,7 +15,7 @@ export default [
     },
     {
         name: 'PYTHON - Function',
-        scope: ['source.python meta.function.python'],
+        scope: ['source.python meta.function.python', 'source.python meta.qualified-name.python support.type.python'],
         settings: {
             foreground: 'var(blue)',
         },
