@@ -16,6 +16,8 @@ export default [
     {
         name: 'PUNCTUATION - Parameters eg: ()',
         scope: [
+            'punctuation.section.inheritance.begin',
+            'punctuation.section.inheritance.end',
             'punctuation.section.arguments.begin',
             'punctuation.section.arguments.end',
             'punctuation.definition.parameters.begin',

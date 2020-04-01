@@ -377,7 +377,7 @@
         },
         {
             "name": "PUNCTUATION - Parameters eg: ()",
-            "scope": "punctuation.section.arguments.begin,punctuation.section.arguments.end,punctuation.definition.parameters.begin,punctuation.definition.parameters.end,punctuation.definition.block,punctuation.definition.metadata.begin,punctuation.definition.metadata.end",
+            "scope": "punctuation.section.inheritance.begin,punctuation.section.inheritance.end,punctuation.section.arguments.begin,punctuation.section.arguments.end,punctuation.definition.parameters.begin,punctuation.definition.parameters.end,punctuation.definition.block,punctuation.definition.metadata.begin,punctuation.definition.metadata.end",
             "foreground": "var(cyan)"
         },
         {
