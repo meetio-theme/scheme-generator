@@ -1,6 +1,6 @@
 {
     "name": "@meetio/scheme-generator",
-    "version": "1.4.3",
+    "version": "1.4.4",
     "description": "Easily generate themes for Sublime Text",
     "main": "dist/index.js",
     "typescript": {
