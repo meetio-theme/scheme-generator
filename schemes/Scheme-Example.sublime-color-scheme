@@ -612,6 +612,28 @@
             "background": "color(var(green) alpha(0.10))"
         },
         {
+            "name": "GIT - Text",
+            "scope": "text.git.commit meta.subject.git.commit markup.heading.subject.git.commit",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "GIT - Author",
+            "scope": "text.git.commit meta.reference.username.git entity.name.reference.username.git",
+            "font_style": "italic",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "GIT - Reference number",
+            "scope": "text.git.commit meta.reference.issue.git constant.other.reference.issue.git",
+            "font_style": "bold",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "GIT - Resolved issue",
+            "scope": "text.git.commit keyword.other.resolved-issue.git",
+            "foreground": "var(red)"
+        },
+        {
             "name": "JS - Console, \"console\"",
             "scope": "support.type.object.console,support.class.console",
             "foreground": "var(yellow)"

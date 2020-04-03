@@ -16,6 +16,7 @@ import variable from './common/variable';
 import css from './specific/css';
 import diff from './specific/diff';
 import html from './specific/html';
+import git from './specific/git';
 import js from './specific/js';
 import json from './specific/json';
 import jsx from './specific/jsx';
@@ -40,6 +41,7 @@ export const defaultRules = [
     html,
     css,
     diff,
+    git,
     js,
     json,
     jsx,
