@@ -2,19 +2,19 @@
 import { generateScheme, ISchemeSetting } from '../dist/index';
 const settings: ISchemeSetting = {
     colors: {
-        cursor: '#67d2ff',
-        foreground: '#bfcdf4',
-        background: '#212339',
-        comments: '#637777',
-        blue: '#82aaff',
-        brown: '#c17e70',
-        cyan: '#50c4fa',
-        green: '#c3e88d',
-        orange: '#ff966c',
-        pink: '#fca7ea',
-        purple: '#c099ff',
-        red: '#ff757f',
-        yellow: '#ffc777',
+        cursor: '#80CBC4',
+        foreground: '#A6ACCD',
+        background: '#292D3E',
+        comments: '#676E95',
+        blue: '#82AAFF',
+        brown: '#916b53',
+        cyan: '#89DDFF',
+        green: '#C3E88D',
+        orange: '#F78C6C',
+        pink: '#ff9cac',
+        purple: '#C792EA',
+        red: '#f07178',
+        yellow: '#FFCB6B',
         deprecated: '#ffc777a1',
         invalid: '#d46c6c66',
         diffAdded: '#addb67',
@@ -24,22 +24,7 @@ const settings: ISchemeSetting = {
     ui: {
         caret: 'var(orange)',
     },
-    rules: [
-        {
-            name: '[OVERWRITE] - Function declaration',
-            scope: ['meta.function-call', 'entity.name.function'],
-            settings: {
-                font_style: 'glow',
-            },
-        },
-        {
-            name: '[OVERWRITE] - Function call',
-            scope: ['variable.function'],
-            settings: {
-                font_style: 'glow',
-            },
-        },
-    ],
+    rules: [],
 };
 
 generateScheme(

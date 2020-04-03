@@ -6,4 +6,11 @@ export default [
             foreground: 'var(foreground)',
         },
     },
+    {
+        name: 'JSX - String Quoted',
+        scope: ['string.quoted.jsx'],
+        settings: {
+            foreground: 'var(green)',
+        },
+    },
 ];

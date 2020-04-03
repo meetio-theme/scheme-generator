@@ -37,7 +37,7 @@ export default [
             'keyword.operator.logical',
         ],
         settings: {
-            foreground: 'var(orange)',
+            foreground: 'var(cyan)',
         },
     },
     {

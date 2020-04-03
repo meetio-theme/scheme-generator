@@ -25,6 +25,7 @@ export default [
             'punctuation.definition.block',
             'punctuation.definition.metadata.begin',
             'punctuation.definition.metadata.end',
+            'meta.group.braces.round.function.arguments'
         ],
         settings: {
             foreground: 'var(cyan)',
