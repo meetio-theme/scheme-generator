@@ -25,7 +25,7 @@ export default [
             'punctuation.definition.block',
             'punctuation.definition.metadata.begin',
             'punctuation.definition.metadata.end',
-            'meta.group.braces.round.function.arguments'
+            'meta.group.braces.round.function.arguments',
         ],
         settings: {
             foreground: 'var(cyan)',
@@ -48,6 +48,8 @@ export default [
         scope: [
             'punctuation.definition.tag.begin',
             'punctuation.definition.tag.end',
+            'punctuation.definition.reference.email.end.git',
+            'punctuation.definition.reference.email.begin.git',
         ],
         settings: {
             foreground: 'var(cyan)',

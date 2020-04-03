@@ -387,7 +387,7 @@
         },
         {
             "name": "PUNCTUATION - Parameters eg: <>",
-            "scope": "punctuation.definition.tag.begin,punctuation.definition.tag.end",
+            "scope": "punctuation.definition.tag.begin,punctuation.definition.tag.end,punctuation.definition.reference.email.end.git,punctuation.definition.reference.email.begin.git",
             "foreground": "var(cyan)"
         },
         {
@@ -623,10 +623,27 @@
             "foreground": "var(cyan)"
         },
         {
+            "name": "GIT - Author Email",
+            "scope": "text.git.commit entity.name.reference.email.git",
+            "font_style": "italic",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "GIT - Timestamp",
+            "scope": "text.git.commit comment.line.git.commit constant.language.timestamp.git.commit",
+            "foreground": "var(yellow)"
+        },
+        {
             "name": "GIT - Reference number",
             "scope": "text.git.commit meta.reference.issue.git constant.other.reference.issue.git",
             "font_style": "bold",
             "foreground": "var(purple)"
+        },
+        {
+            "name": "GIT - hash number",
+            "scope": "text.git.commit meta.message.git.commit constant.other.hash.git.commit",
+            "font_style": "bold",
+            "foreground": "var(green)"
         },
         {
             "name": "GIT - Resolved issue",
