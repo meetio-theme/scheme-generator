@@ -9,7 +9,7 @@ export default [
         },
     },
     {
-        name: 'GIT - Author',
+        name: 'GIT - Author username',
         scope: [
             'text.git.commit meta.reference.username.git entity.name.reference.username.git',
         ],
@@ -19,7 +19,7 @@ export default [
         },
     },
     {
-        name: 'GIT - Author Email',
+        name: 'GIT - Author email',
         scope: ['text.git.commit entity.name.reference.email.git'],
         settings: {
             font_style: 'italic',
@@ -27,7 +27,7 @@ export default [
         },
     },
     {
-        name: 'GIT - Timestamp',
+        name: 'GIT - Comment Timestamp',
         scope: ['text.git.commit comment.line.git.commit constant.language.timestamp.git.commit'],
         settings: {
             foreground: 'var(yellow)',
@@ -44,7 +44,7 @@ export default [
         },
     },
     {
-        name: 'GIT - hash number',
+        name: 'GIT - Hash number',
         scope: [
             'text.git.commit meta.message.git.commit constant.other.hash.git.commit',
         ],
