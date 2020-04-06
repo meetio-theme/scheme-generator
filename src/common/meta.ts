@@ -98,6 +98,15 @@ export default [
         },
     },
     {
+        name: 'META - Sections of code delineated by round braces',
+        scope: [
+            'meta.brace.round',
+        ],
+        settings: {
+            foreground: 'var(orange)',
+        },
+    },
+    {
         name: 'META - Sections of code delineated by parentheses',
         scope: [
             'meta.group',
