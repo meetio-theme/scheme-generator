@@ -33,7 +33,7 @@ export default [
         name: 'MARKUP - Underline',
         scope: ['markup.underline'],
         settings: {
-            font_style: 'italic',
+            font_style: 'underline',
             foreground: 'var(purple)',
         },
     },
@@ -41,7 +41,7 @@ export default [
         name: 'MARKUP - Underline Link',
         scope: ['markup.underline.link'],
         settings: {
-            font_style: 'italic',
+            font_style: 'italic underline',
             foreground: 'var(red)',
         },
     },
