@@ -1,7 +1,7 @@
 export default [
     {
         name: 'COMMENTS - Single and multi-line comments should use, respectively',
-        scope: ['comment.line', 'comment.block'],
+        scope: ['comment', 'comment.line', 'comment.block'],
         settings: {
             foreground: 'var(comments)',
             font_style: 'italic',
