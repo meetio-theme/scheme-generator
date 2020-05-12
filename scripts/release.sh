@@ -23,7 +23,7 @@ then
   # commit and tag
   git add CHANGELOG.md package.json
   git commit -m "chore(release): v$VERSION"
-  git tag "v$VERSION"
+  git tag -a $VERSION -m "v$VERSION"
 
   # commit
   yarn publish --tag next --new-version "$VERSION" --no-commit-hooks --no-git-tag-version
