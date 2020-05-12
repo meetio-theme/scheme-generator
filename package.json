@@ -1,6 +1,6 @@
 {
     "name": "@meetio/scheme-generator",
-    "version": "1.6.0",
+    "version": "1.6.1",
     "description": "Easily generate themes for Sublime Text",
     "main": "dist/index.js",
     "typescript": {
@@ -35,11 +35,11 @@
         "@babel/preset-env": "7.9.6",
         "@commitlint/cli": "^8.3.5",
         "@commitlint/config-conventional": "^8.3.4",
-        "conventional-changelog-cli": "^2.0.11",
         "@typescript-eslint/eslint-plugin": "2.32.0",
         "@typescript-eslint/parser": "2.32.0",
         "babel-eslint": "^10.0.3",
         "chalk": "^4.0.0",
+        "conventional-changelog-cli": "^2.0.11",
         "eslint": "7.0.0",
         "husky": "^4.2.5",
         "prettier": "^2.0.5",

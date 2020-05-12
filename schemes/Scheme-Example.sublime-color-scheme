@@ -54,12 +54,12 @@
         "shadow": "color(var(background) alpha(0.5))",
         "stack_guide": "var(brown)",
         "tags_foreground": "var(cyan)",
-        "tags_options": "underline, glow"
+        "tags_options": "underline"
     },
     "rules": [
         {
             "name": "COMMENTS - Single and multi-line comments should use, respectively",
-            "scope": "comment.line,comment.block",
+            "scope": "comment,comment.line,comment.block",
             "foreground": "var(comments)",
             "font_style": "italic"
         },
