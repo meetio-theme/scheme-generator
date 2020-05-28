@@ -13,11 +13,16 @@ export function generateScheme(
     settings: ISchemeSetting,
     dist: string = 'schemes'
 ) {
-    const { colors, ui, rules } = settings;
+    const { colors, ui, rules, useDefault = true } = settings;
     const allRules: Array<{ name: string; scope: string }> = [];
     const allScopes = new Set();
+    let spread = [rules];
 
-    [...defaultRules, [...rules]].forEach((rule: Array<IRules>) => {
+    if (useDefault) {
+      spread = [...defaultRules, [...rules]];
+    }
+
+    spread.forEach((rule: Array<IRules>) => {
         rule.forEach((item: IRules) => {
             item.scope.forEach((i: string) => {
                 if (allScopes.has(i)) {
