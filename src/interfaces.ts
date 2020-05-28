@@ -66,6 +66,8 @@ export interface IColors {
     foreground: string;
     background: string;
     comments: string;
+    white?: string;
+    black?: string;
     blue?: string;
     brown?: string;
     cyan?: string;
