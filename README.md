@@ -16,7 +16,7 @@ npm i @meetio/scheme-generator -D
 yarn add @meetio/scheme-generator
 ```
 
-In addition to the base settings, `ISchemeSetting` provides more options for `colors`, `ui`, and `rules`.
+In addition to the base settings, `ISchemeSetting` provides more options for `colors`, `ui`, `rules` and `useDefaultRules`.
 There is also an overrides property, which allows you to set any color key from the [Color Scheme Reference](https://www.sublimetext.com/docs/3/color_schemes.html) directly.
 
 ### Example
