@@ -1,5 +1,5 @@
 export interface IRules {
-    name: string;
+    name?: string;
     scope: string[];
     settings: {
         foreground?: string;
