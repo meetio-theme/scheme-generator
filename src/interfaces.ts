@@ -12,7 +12,7 @@ export interface ISchemeSetting {
     colors: IColors;
     ui?: IUi;
     rules?: Array<IRules>;
-    useDefault?: boolean;
+    useDefaultRules?: boolean;
 }
 
 export interface IUi {
