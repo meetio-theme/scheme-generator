@@ -1,3 +1,19 @@
+<a name="1.7.1"></a>
+## [1.7.1](https://github.com/meetio-theme/scheme-generator/compare/v1.7.0...v1.7.1) (2020-05-28)
+
+
+
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/meetio-theme/scheme-generator/compare/v1.6.2...v1.7.0) (2020-05-28)
+
+
+### Bug Fixes
+
+* script ([ea0256d](https://github.com/meetio-theme/scheme-generator/commit/ea0256d))
+* support override rules ([d2f3595](https://github.com/meetio-theme/scheme-generator/commit/d2f3595))
+
+
+
 <a name="1.7.0"></a>
 # [1.7.0](https://github.com/meetio-theme/scheme-generator/compare/v1.6.2...v1.7.0) (2020-05-28)
 
