@@ -24,7 +24,7 @@ const settings: ISchemeSetting = {
     ui: {
         caret: 'var(orange)',
         tags_options: 'underline',
-        brackets_options: 'underline, glow',
+        brackets_options: 'underline, glow'
     },
     rules: [],
 };

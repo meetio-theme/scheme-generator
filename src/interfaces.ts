@@ -76,7 +76,7 @@ export interface IUi {
     inactive_selection_border?: string;
     /** A color that will override the scope-based text color of the selection in a view that is not currently focused. */
     inactive_selection_foreground?: string;
-    /** The style of corners to use on selections. Options include: 'round' (the default), 'cut' or 'square'. */
+    /** The style of corners to use on selections. */
     selection_corner_style?: 'round' | 'cut' | 'square';
     /** The radius to use when the selection_corner_style. */
     selection_corner_radius?: 'round' | 'cut';
@@ -92,15 +92,15 @@ export interface IUi {
     stack_guide?: string;
     /** The color used to draw the indent guides for the parent indentation levels of the indentation level containing the caret. */
     active_guide?: string;
-    /** How brackets are highlighted when the caret is next to one. */
+    /** How brackets are highlighted when the caret is next to one: `underline` | `stippled_underline` | `squiggly_underline` | `foreground` | `bold` | `italic` */
     brackets_options?: string;
     /** The color to use when drawing the style specified by `brackets_options`. */
     brackets_foreground?: string;
-    /** How brackets are highlighted when the caret is positioned in between a pair of brackets. */
+    /** How brackets are highlighted when the caret is positioned in between a pair of brackets: `underline` | `stippled_underline` | `squiggly_underline` | `foreground` */
     bracket_contents_options?: string;
     /** The color to use when drawing the style specified by `brackets_contents_options`. */
     bracket_contents_foreground?: string;
-    /** How tags are highlighted when the caret is inside of one. */
+    /** How tags are highlighted when the caret is inside of one: `underline` | `stippled_underline` | `squiggly_underline` | `foreground` */
     tags_options?: string;
     /** he color to use when drawing the style specified by tags_options. */
     tags_foreground?: string;
