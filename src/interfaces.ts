@@ -93,15 +93,15 @@ export interface IUi {
     /** The color used to draw the indent guides for the parent indentation levels of the indentation level containing the caret. */
     active_guide?: string;
     /** How brackets are highlighted when the caret is next to one. */
-    brackets_options?: 'underline' | 'stippled_underline' | 'squiggly_underline' | 'foreground' | 'bold' | 'italic';
+    brackets_options?: string;
     /** The color to use when drawing the style specified by `brackets_options`. */
     brackets_foreground?: string;
     /** How brackets are highlighted when the caret is positioned in between a pair of brackets. */
-    bracket_contents_options?: 'underline' | 'stippled_underline' | 'squiggly_underline' | 'foreground';
+    bracket_contents_options?: string;
     /** The color to use when drawing the style specified by `brackets_contents_options`. */
     bracket_contents_foreground?: string;
     /** How tags are highlighted when the caret is inside of one. */
-    tags_options?: 'underline' | 'stippled_underline' | 'squiggly_underline' | 'foreground';
+    tags_options?: string;
     /** he color to use when drawing the style specified by tags_options. */
     tags_foreground?: string;
     /** The color of the shadow used to show when a text area can be horizontally scrolled. */
