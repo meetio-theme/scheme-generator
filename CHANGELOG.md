@@ -1,3 +1,30 @@
+<a name="1.10.0"></a>
+# [1.10.0](https://github.com/meetio-theme/scheme-generator/compare/v1.7.3...v1.10.0) (2020-05-31)
+
+
+### Bug Fixes
+
+* add type in interface ([a90ba54](https://github.com/meetio-theme/scheme-generator/commit/a90ba54))
+* types ([1837128](https://github.com/meetio-theme/scheme-generator/commit/1837128))
+
+
+### Features
+
+* add new types ([206c22d](https://github.com/meetio-theme/scheme-generator/commit/206c22d))
+
+
+
+<a name="1.7.3"></a>
+## [1.7.3](https://github.com/meetio-theme/scheme-generator/compare/v1.7.2...v1.7.3) (2020-05-28)
+
+
+### Bug Fixes
+
+* types ([e6b3955](https://github.com/meetio-theme/scheme-generator/commit/e6b3955))
+* types ([d422f37](https://github.com/meetio-theme/scheme-generator/commit/d422f37))
+
+
+
 <a name="1.7.3"></a>
 ## [1.7.3](https://github.com/meetio-theme/scheme-generator/compare/v1.7.2...v1.7.3) (2020-05-28)
 
