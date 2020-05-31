@@ -55,7 +55,7 @@ export interface IUi {
     /** The color of line numbers in the gutter when a line is highlighted. (+4050) */
     gutter_foreground_highlight?: string;
     /** The width of the diff lines, between 1 and 8. (+3186) */
-    line_diff_width?: number;
+    line_diff_width?: string;
     /** The color of diff markers for added lines. (+3186) */
     line_diff_added?: string;
     /** The color of diff markers for modified lines. (+3186) */
@@ -69,7 +69,7 @@ export interface IUi {
     /** The color for the border of the selection. */
     selection_border?: string;
     /** The width of the selection border, from 0 to 4. */
-    selection_border_width?: number;
+    selection_border_width?: string;
     /** The background color of a selection in a view that is not currently focused. */
     inactive_selection?: string;
     /** The color for the border of the selection in a view that is not currently focused. (+4074) */
