@@ -115,6 +115,7 @@ export interface IColors {
     foreground: string;
     background: string;
     comments: string;
+    accent?: string;
     white?: string;
     black?: string;
     blue?: string;
