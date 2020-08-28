@@ -22,6 +22,7 @@
         "diffDeleted": "#ef5350"
     },
     "globals": {
+        "accent": "var(accent)",
         "active_guide": "var(cyan)",
         "background": "var(background)",
         "block_caret": "var(cursor)",
