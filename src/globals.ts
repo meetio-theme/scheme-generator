@@ -1,6 +1,7 @@
 import { IUi } from './interfaces';
 
 export const defaultGlobals: IUi = {
+    accent: 'var(accent)',
     active_guide: 'var(cyan)',
     background: 'var(background)',
     block_caret: 'var(cursor)',
