@@ -1,3 +1,19 @@
+<a name="1.11.0"></a>
+# [1.11.0](https://github.com/meetio-theme/scheme-generator/compare/v1.10.2...v1.11.0) (2020-08-28)
+
+
+### Bug Fixes
+
+* add accent by default ([7edcd96](https://github.com/meetio-theme/scheme-generator/commit/7edcd96))
+* update interfaces ([d7c6b9f](https://github.com/meetio-theme/scheme-generator/commit/d7c6b9f))
+
+
+
+<a name="1.10.2"></a>
+## [1.10.2](https://github.com/meetio-theme/scheme-generator/compare/v1.10.1...v1.10.2) (2020-06-02)
+
+
+
 <a name="1.10.2"></a>
 ## [1.10.2](https://github.com/meetio-theme/scheme-generator/compare/v1.10.1...v1.10.2) (2020-06-02)
 
