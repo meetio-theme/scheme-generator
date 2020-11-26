@@ -1,3 +1,25 @@
+<a name="1.12.0"></a>
+# [1.12.0](https://github.com/meetio-theme/scheme-generator/compare/v1.11.0...v1.12.0) (2020-11-26)
+
+
+### Bug Fixes
+
+* add demo ([0c5ff5a](https://github.com/meetio-theme/scheme-generator/commit/0c5ff5a))
+* change color of `misspelling` to blue ([1e2f872](https://github.com/meetio-theme/scheme-generator/commit/1e2f872))
+
+
+
+<a name="1.11.0"></a>
+# [1.11.0](https://github.com/meetio-theme/scheme-generator/compare/v1.10.2...v1.11.0) (2020-08-28)
+
+
+### Bug Fixes
+
+* add accent by default ([7edcd96](https://github.com/meetio-theme/scheme-generator/commit/7edcd96))
+* update interfaces ([d7c6b9f](https://github.com/meetio-theme/scheme-generator/commit/d7c6b9f))
+
+
+
 <a name="1.11.0"></a>
 # [1.11.0](https://github.com/meetio-theme/scheme-generator/compare/v1.10.2...v1.11.0) (2020-08-28)
 
