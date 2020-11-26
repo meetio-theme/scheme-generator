@@ -2,7 +2,8 @@
 import { generateScheme, ISchemeSetting } from '../dist/index';
 const settings: ISchemeSetting = {
     colors: {
-        cursor: '#80CBC4',
+        accent: '#69bdbd',
+        cursor: '#e6db30',
         foreground: '#A6ACCD',
         background: '#292D3E',
         comments: '#676E95',
@@ -22,7 +23,7 @@ const settings: ISchemeSetting = {
         diffDeleted: '#ef5350',
     },
     ui: {
-        caret: 'var(orange)',
+        caret: 'var(cursor)',
         tags_options: 'underline',
         brackets_options: 'underline, glow'
     },
