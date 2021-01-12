@@ -5,7 +5,6 @@
 [![GitHub Issues](https://img.shields.io/github/issues/meetio-theme/scheme-generator.svg?style=for-the-badge)](https://github.com/meetio-theme/scheme-generator/issues)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://github.com/meetio-theme/scheme-generator/blob/master/LICENSE)
 
-
 ## Getting started
 
 ```bash
@@ -28,27 +27,40 @@ import { generateScheme, ISchemeSetting } from '@meetio/scheme-generator';
 
 const settings: ISchemeSetting = {
     colors: {
+        accent: '#80cbc4',
         cursor: '#ffcc00',
-        foreground: '#dedfe4',
-        background: '#212339',
-        comments: '#637777',
-        blue: '#82aaff',
-        brown: '#c17e70',
-        cyan: '#86e1fc',
-        green: '#c3e88d',
-        orange: '#ff966c',
-        pink: '#ff5874',
-        purple: '#c099ff',
-        red: '#ff757f',
-        yellow: '#ffc777',
+        foreground: '#eeffff',
+        background: '#263238',
+        comments: '#546e7a',
         deprecated: '#ffc777a1',
         invalid: '#d46c6c66',
         diffAdded: '#addb67',
         diffModified: '#e2b93d',
         diffDeleted: '#ef5350',
+        base: {
+            white: '#ffffff',
+            black: '#000000',
+            red: '#f07178',
+            orange: '#f78c6c',
+            yellow: '#ffcb6b',
+            green: '#c3e88d',
+            cyan: '#89ddff',
+            blue: '#82aaff',
+            purple: '#c792ea',
+            brown: '#916b53',
+            pink: '#ff9cac',
+            violet: '#bb80b3',
+        },
     },
     ui: {
-        caret: "var(orange)"
+        tags_options: 'underline',
+        brackets_options: 'underline, glow',
+        line_highlight: '#00000040',
+        selection: '#80CBC420',
+        gutter_foreground: '#37474F',
+        shadow: '#00000030',
+        find_highlight: '#FFCC00',
+        inactive_selection: '#00000030',
     },
     rules: [
         {
@@ -68,7 +80,12 @@ const settings: ISchemeSetting = {
     ],
 };
 
-generateScheme('My Scheme', 'Mauro Reis Vieira', 'My-Theme' settings);
+generateScheme({
+    name: 'Scheme Example',
+    author: 'Mauro Reis Vieira <mauroreisvieira@gmail.com>',
+    schemeName: 'Scheme Example',
+    settings,
+});
 ```
 
 ### Support

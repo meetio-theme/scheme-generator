@@ -28,7 +28,6 @@ const settings: ISchemeSetting = {
         },
     },
     ui: {
-        caret: 'var(cursor)',
         tags_options: 'underline',
         brackets_options: 'underline, glow',
         line_highlight: '#00000040',
