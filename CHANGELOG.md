@@ -1,3 +1,22 @@
+# [2.0.0](https://github.com/meetio-theme/scheme-generator/compare/v1.12.0...v2.0.0) (2021-01-12)
+
+
+### Features
+
+* change generateScheme method and color object ([b72ecf8](https://github.com/meetio-theme/scheme-generator/commit/b72ecf882217b2d7c1ec280c835b361526c2544d))
+
+
+
+# [1.12.0](https://github.com/meetio-theme/scheme-generator/compare/v1.11.0...v1.12.0) (2020-11-26)
+
+
+### Bug Fixes
+
+* add demo ([0c5ff5a](https://github.com/meetio-theme/scheme-generator/commit/0c5ff5a24642afff49897aed914b57342279393b))
+* change color of `misspelling` to blue ([1e2f872](https://github.com/meetio-theme/scheme-generator/commit/1e2f8724c582b9816dd948c5c12920d476692491))
+
+
+
 <a name="1.12.0"></a>
 # [1.12.0](https://github.com/meetio-theme/scheme-generator/compare/v1.11.0...v1.12.0) (2020-11-26)
 
