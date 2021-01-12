@@ -1,3 +1,32 @@
+export interface IColorsBase {
+    black: string;
+    blue: string;
+    brown: string;
+    cyan: string;
+    green: string;
+    orange: string;
+    pink: string;
+    purple: string;
+    red: string;
+    violet: string;
+    white: string;
+    yellow: string;
+}
+
+export interface IColors {
+    accent: string;
+    cursor: string;
+    foreground: string;
+    background: string;
+    comments: string;
+    invalid: string;
+    deprecated: string;
+    diffAdded: string;
+    diffModified: string;
+    diffDeleted: string;
+    base: IColorsBase;
+}
+
 export interface IRules {
     name?: string;
     scope: string[];
@@ -110,27 +139,15 @@ export interface IUi {
     shadow_width?: string;
 }
 
-export interface IColors {
-    cursor: string;
-    foreground: string;
-    background: string;
-    comments: string;
-    accent?: string;
-    white?: string;
-    black?: string;
-    blue?: string;
-    brown?: string;
-    cyan?: string;
-    gray?: string;
-    green?: string;
-    orange?: string;
-    pink?: string;
-    purple?: string;
-    red?: string;
-    yellow?: string;
-    invalid?: string;
-    deprecated?: string;
-    diffAdded?: string;
-    diffModified?: string;
-    diffDeleted?: string;
+export interface IGenerateScheme {
+    /** Name of file with '.sublime-color-scheme' extension */
+    name: string;
+    /** Author name */
+    author: string;
+    /** Scheme name */
+    schemeName: string;
+    /** Settings of scheme */
+    settings: ISchemeSetting;
+    /** Name of destination folder */
+    distFolder?: string;
 }

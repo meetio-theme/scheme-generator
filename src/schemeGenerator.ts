@@ -4,22 +4,18 @@ import { duplicated, success, error } from './utils';
 import { defaultRules } from './rules';
 import { defaultGlobals } from './globals';
 
-import { ISchemeSetting, IRules } from './interfaces';
+import { IGenerateScheme, IRules } from './interfaces';
 
-export function generateScheme(
-    name: string,
-    author: string,
-    schemeName: string,
-    settings: ISchemeSetting,
-    dist: string = 'schemes'
-) {
+export function generateScheme(options: IGenerateScheme) {
+    const { name, author, schemeName, settings, distFolder = 'schemes' } = options;
     const { colors, ui, rules, useDefaultRules = true } = settings;
+    const { base, ...rest } = colors;
     const allRules: Array<{ name: string; scope: string }> = [];
     const allScopes = new Set();
     let spread = [rules];
 
     if (useDefaultRules) {
-      spread = [...defaultRules, [...rules]];
+        spread = [...defaultRules, [...rules]];
     }
 
     spread.forEach((rule: Array<IRules>) => {
@@ -40,15 +36,15 @@ export function generateScheme(
         });
     });
 
-    fs.mkdir(dist, () => {
+    fs.mkdir(distFolder, () => {
         try {
             fs.writeFileSync(
-                `${dist}/${schemeName}.sublime-color-scheme`,
+                `${distFolder}/${schemeName}.sublime-color-scheme`,
                 JSON.stringify(
                     {
                         name,
                         author,
-                        variables: colors,
+                        variables: { ...rest, ...base },
                         globals: Object.assign(defaultGlobals, ui),
                         rules: allRules,
                     },
@@ -56,7 +52,7 @@ export function generateScheme(
                     4
                 )
             );
-            success(schemeName, dist);
+            success(schemeName, distFolder);
         } catch (e) {
             error(e);
         }
