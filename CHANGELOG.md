@@ -1,3 +1,21 @@
+## [2.0.1](https://github.com/meetio-theme/scheme-generator/compare/v2.0.0...v2.0.1) (2021-01-13)
+
+
+### Features
+
+* add gray color ([f0f6821](https://github.com/meetio-theme/scheme-generator/commit/f0f682112a5fbd7f5ee8d89c1600a4d2e0867823))
+
+
+
+# [2.0.0](https://github.com/meetio-theme/scheme-generator/compare/v1.12.0...v2.0.0) (2021-01-12)
+
+
+### Features
+
+* change generateScheme method and color object ([b72ecf8](https://github.com/meetio-theme/scheme-generator/commit/b72ecf882217b2d7c1ec280c835b361526c2544d))
+
+
+
 # [2.0.0](https://github.com/meetio-theme/scheme-generator/compare/v1.12.0...v2.0.0) (2021-01-12)
 
 
