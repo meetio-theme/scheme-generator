@@ -4,7 +4,7 @@
     "description": "Easily generate schemes for Sublime Text",
     "main": "dist/index.js",
     "typescript": {
-        "definition": "index.d.ts"
+        "definition": "dist/index.d.ts"
     },
     "files": [
         "dist/**/*.js",

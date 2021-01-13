@@ -1,16 +1,17 @@
 export interface IColorsBase {
-    black: string;
-    blue: string;
-    brown: string;
-    cyan: string;
-    green: string;
-    orange: string;
-    pink: string;
-    purple: string;
-    red: string;
-    violet: string;
-    white: string;
-    yellow: string;
+    black?: string;
+    blue?: string;
+    gray?: string;
+    brown?: string;
+    cyan?: string;
+    green?: string;
+    orange?: string;
+    pink?: string;
+    purple?: string;
+    red?: string;
+    violet?: string;
+    white?: string;
+    yellow?: string;
 }
 
 export interface IColors {
@@ -37,13 +38,6 @@ export interface IRules {
         selection_foreground?: string;
         font_style?: string;
     };
-}
-
-export interface ISchemeSetting {
-    colors: IColors;
-    ui?: IUi;
-    rules?: Array<IRules>;
-    useDefaultRules?: boolean;
 }
 
 export interface IUi {
@@ -137,6 +131,13 @@ export interface IUi {
     shadow?: string;
     /** The width of the shadow in device-independent pixels. */
     shadow_width?: string;
+}
+
+export interface ISchemeSetting {
+    colors: IColors;
+    ui?: IUi;
+    rules?: Array<IRules>;
+    useDefaultRules?: boolean;
 }
 
 export interface IGenerateScheme {
