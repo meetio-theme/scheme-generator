@@ -1,3 +1,21 @@
+## [2.0.2](https://github.com/meetio-theme/scheme-generator/compare/v2.0.1...v2.0.2) (2021-04-15)
+
+
+### Bug Fixes
+
+* diff background color ([e0daa96](https://github.com/meetio-theme/scheme-generator/commit/e0daa96a0f604382041add2591e58042ee2b6bc5))
+
+
+
+## [2.0.1](https://github.com/meetio-theme/scheme-generator/compare/v2.0.0...v2.0.1) (2021-01-13)
+
+
+### Features
+
+* add gray color ([f0f6821](https://github.com/meetio-theme/scheme-generator/commit/f0f682112a5fbd7f5ee8d89c1600a4d2e0867823))
+
+
+
 ## [2.0.1](https://github.com/meetio-theme/scheme-generator/compare/v2.0.0...v2.0.1) (2021-01-13)
 
 
