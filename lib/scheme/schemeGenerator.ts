@@ -1,12 +1,10 @@
 /* eslint-disable no-undef */
 import * as fs from 'fs';
-import { duplicated, success, error } from './utils';
-import { defaultRules } from './rules';
-import { defaultGlobals } from './globals';
+import { GenerateScheme, Rules } from '../interfaces';
+import { duplicated, error, success } from '../utils/log';
+import { defaultGlobals, defaultRules } from './rules';
 
-import { IGenerateScheme, IRules } from './interfaces';
-
-export function generateScheme(options: IGenerateScheme) {
+export function generateScheme(options: GenerateScheme) {
     const { name, author, schemeName, settings, distFolder = 'schemes' } = options;
     const { colors, ui, rules, useDefaultRules = true } = settings;
     const { base, ...rest } = colors;
@@ -18,8 +16,8 @@ export function generateScheme(options: IGenerateScheme) {
         spread = [...defaultRules, [...rules]];
     }
 
-    spread.forEach((rule: Array<IRules>) => {
-        rule.forEach((item: IRules) => {
+    spread.forEach((rule: Rules[]) => {
+        rule.forEach((item: Rules) => {
             item.scope.forEach((i: string) => {
                 if (allScopes.has(i)) {
                     duplicated(i, item.name);

@@ -1,6 +1,31 @@
-import { IUi } from './interfaces';
+import { UI } from '../../interfaces';
 
-export const defaultGlobals: IUi = {
+import comment from './common/comment';
+import constant from './common/constant';
+import entity from './common/entity';
+import invalid from './common/invalid';
+import keyword from './common/keyword';
+import markup from './common/markup';
+import meta from './common/meta';
+import punctuation from './common/punctuation';
+import source from './common/source';
+import storage from './common/storage';
+import string from './common/string';
+import support from './common/support';
+import text from './common/text';
+import variable from './common/variable';
+
+import CSS from './languages/css';
+import diff from './languages/diff';
+import html from './languages/html';
+import git from './languages/git';
+import js from './languages/js';
+import json from './languages/json';
+import jsx from './languages/jsx';
+import python from './languages/python';
+import vue from './languages/vue';
+
+export const defaultGlobals: UI = {
     accent: 'var(accent)',
     active_guide: 'var(cyan)',
     background: 'var(background)',
@@ -23,7 +48,7 @@ export const defaultGlobals: IUi = {
     line_diff_added: 'var(diffAdded)',
     line_diff_deleted: 'var(diffDeleted)',
     line_diff_modified: 'var(diffModified)',
-    line_diff_width: "2",
+    line_diff_width: '2',
     line_highlight: 'color(var(foreground) alpha(0.1))',
     misspelling: 'var(blue)',
     selection: 'color(var(foreground) alpha(0.10))',
@@ -35,3 +60,29 @@ export const defaultGlobals: IUi = {
     tags_foreground: 'var(cyan)',
     tags_options: 'underline',
 };
+
+export const defaultRules = [
+    comment,
+    constant,
+    entity,
+    invalid,
+    keyword,
+    markup,
+    meta,
+    punctuation,
+    source,
+    storage,
+    string,
+    support,
+    text,
+    variable,
+    html,
+    css,
+    diff,
+    git,
+    js,
+    json,
+    jsx,
+    python,
+    vue,
+];

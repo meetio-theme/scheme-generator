@@ -1,4 +1,6 @@
-export default [
+import { Rules } from '../../../interfaces';
+
+const data: Rules[] =  [
     {
         name: 'CSS - Attribute name ID',
         scope: ['entity.other.attribute-name.id'],
@@ -28,3 +30,5 @@ export default [
         },
     },
 ];
+
+export default data;
