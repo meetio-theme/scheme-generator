@@ -139,6 +139,15 @@ export interface SchemeSetting {
     rules?: Rules[];
 }
 
+interface Output {
+  /** Scheme file name */
+  filename: string;
+  /** Folder destination */
+  path?: string;
+  /** Extension file */
+  extension?: string;
+}
+
 export interface GenerateScheme {
     /** Name of Scheme */
     name: string;
@@ -147,10 +156,5 @@ export interface GenerateScheme {
     /** Settings of scheme */
     settings: SchemeSetting;
     /** Output Management */
-    output: {
-        /** Scheme file name */
-        filename: string;
-        /** Folder destination */
-        path?: string;
-    };
+    output: Output;
 }

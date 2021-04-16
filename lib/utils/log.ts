@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 
-export const duplicated = (scope: string, name: string) =>
+const duplicated = (scope: string, name: string) =>
     console.log(
         chalk.bold.bgRed(' ‼ERROR‼ ') +
             ' － Duplicated scope [' +
@@ -9,7 +9,7 @@ export const duplicated = (scope: string, name: string) =>
             chalk.yellow(name)
     );
 
-export const success = (scheme: string, folder: string) => {
+const success = (scheme: string, folder: string) => {
     console.log(
         chalk.bold.bgGreen(' SUCCESS ') +
             ' － Scheme ' +
@@ -20,4 +20,6 @@ export const success = (scheme: string, folder: string) => {
     );
 };
 
-export const error = (error: string) => console.log(chalk.bold.red(error));
+const error = (error: string) => console.log(chalk.bold.red(error));
+
+export const log = { duplicated, success, error };

@@ -1,20 +1,15 @@
 import * as fs from 'fs';
 import * as path from 'path';
-
 import { GenerateScheme, Rules } from '../interfaces';
-import { duplicated, error, success } from '../utils/log';
+import { log } from '../utils/log';
 
-export function generateScheme(options: GenerateScheme) {
-    const {
-        name,
-        author,
-        settings,
-        output,
-    } = options;
-    const { colors, ui, rules } = settings;
-    const { base, ...rest } = colors;
+// eslint-disable-next-line no-undef
+interface ScopeRules extends Omit<Rules, 'scope'> {
+    scope: string;
+}
 
-    const allRules: Array<{ name: string; scope: string }> = [];
+function duplicated(rules: Rules[]): ScopeRules[] {
+    const scopeRules: ScopeRules[] = [];
     // eslint-disable-next-line no-undef
     const scopes = new Set();
 
@@ -22,41 +17,48 @@ export function generateScheme(options: GenerateScheme) {
         rule.forEach((item: Rules) => {
             item.scope.forEach((i: string) => {
                 if (scopes.has(i)) {
-                    duplicated(i, item.name);
+                    log.duplicated(i, item.name);
                 }
                 scopes.add(i);
             });
 
-            allRules.push({
+            scopeRules.push({
                 name: item.name,
                 scope: item.scope.toString(),
             });
 
-            Object.assign(allRules[allRules.length - 1], item.settings);
+            Object.assign(scopeRules[scopeRules.length - 1], item.settings);
         });
     });
 
-    // eslint-disable-next-line no-undef
+    return scopeRules;
+}
+
+export function generateScheme(options: GenerateScheme) {
+    const { name, author, settings, output } = options;
+    const { colors, ui, rules } = settings;
+    const { base, ...rest } = colors;
+
     const dist = output.path || path.resolve('schemes');
     fs.mkdir(dist, () => {
         try {
             fs.writeFileSync(
-                `${dist}/${output.filename}.sublime-color-scheme`,
+                `${dist}/${output.filename}${output.extension || '.sublime-color-scheme'}`,
                 JSON.stringify(
                     {
                         name,
                         author,
                         variables: { ...rest, ...base },
                         globals: ui,
-                        rules: allRules,
+                        rules: duplicated(rules),
                     },
                     null,
                     4
                 )
             );
-            success(output.filename, output.path || 'schemes');
+            log.success(output.filename, dist);
         } catch (e) {
-            error(e);
+            log.error(e);
         }
     });
 }
