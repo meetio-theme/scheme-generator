@@ -116,6 +116,26 @@
             "foreground": "var(pink)"
         },
         {
+            "name": "DIFF - Deleted",
+            "scope": "diff.deleted",
+            "background": "color(var(diffDeleted) alpha(0.20))"
+        },
+        {
+            "name": "DIFF - Deleted Char",
+            "scope": "diff.deleted.char",
+            "background": "color(var(diffDeleted) alpha(0.20))"
+        },
+        {
+            "name": "DIFF - Inserted",
+            "scope": "diff.inserted",
+            "background": "color(var(diffAdded) alpha(0.20))"
+        },
+        {
+            "name": "DIFF - Inserted Char",
+            "scope": "diff.inserted.char",
+            "background": "color(var(diffAdded) alpha(0.20))"
+        },
+        {
             "name": "ENTITY - The names of data structures",
             "scope": "entity.name.class,entity.name.struct,entity.name.enum,entity.name.union,entity.name.trait,entity.name.interface,entity.name.impl,entity.name.type",
             "foreground": "var(yellow)"
@@ -589,26 +609,6 @@
             "name": "CSS - Pseudo element",
             "scope": "entity.other.pseudo-element",
             "foreground": "var(purple)"
-        },
-        {
-            "name": "DIFF - Deleted",
-            "scope": "diff.deleted",
-            "background": "color(var(diffDeleted) alpha(0.25))"
-        },
-        {
-            "name": "DIFF - Deleted Char",
-            "scope": "diff.deleted.char",
-            "background": "color(var(diffDeleted) alpha(0.25))"
-        },
-        {
-            "name": "DIFF - Inserted",
-            "scope": "diff.inserted",
-            "background": "color(var(diffAdded) alpha(0.25))"
-        },
-        {
-            "name": "DIFF - Inserted Char",
-            "scope": "diff.inserted.char",
-            "background": "color(var(diffAdded) alpha(0.25))"
         },
         {
             "name": "HTML - Attribute name ID",
