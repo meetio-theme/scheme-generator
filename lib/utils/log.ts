@@ -13,7 +13,7 @@ const success = (scheme: string, folder: string) => {
     console.log(
         chalk.bold.bgGreen(' SUCCESS ') +
             ' － Scheme ' +
-            chalk.bold.cyan(`${scheme}.sublime-color-scheme`) +
+            chalk.bold.blue(`${scheme}.sublime-color-scheme`) +
             ' created in ' +
             chalk.underline.yellow(folder) +
             ' folder'
