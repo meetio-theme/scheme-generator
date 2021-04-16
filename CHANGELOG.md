@@ -1,3 +1,23 @@
+## [3.0.2](https://github.com/meetio-theme/scheme-generator/compare/v3.0.1...v3.0.2) (2021-04-16)
+
+
+### Bug Fixes
+
+* alpha value ([3730d8c](https://github.com/meetio-theme/scheme-generator/commit/3730d8c1455b137041b92aac2980a59ced1cbd68))
+
+
+
+## [3.0.1](https://github.com/meetio-theme/scheme-generator/compare/v3.0.0...v3.0.1) (2021-04-16)
+
+
+### Bug Fixes
+
+* log color ([aa8cceb](https://github.com/meetio-theme/scheme-generator/commit/aa8cceb6202e025909242c6f34ae885ea853673a))
+* move logic to check duplicated scopes ([62dea2d](https://github.com/meetio-theme/scheme-generator/commit/62dea2dbb29eb26575bd51dcd94467d814cfbe46))
+* opacity on diff ([785aa61](https://github.com/meetio-theme/scheme-generator/commit/785aa6161f1a55cc9a7463e85821c3741db70be4))
+
+
+
 ## [3.0.1](https://github.com/meetio-theme/scheme-generator/compare/v3.0.0...v3.0.1) (2021-04-16)
 
 
