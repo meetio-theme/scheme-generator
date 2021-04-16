@@ -1,4 +1,6 @@
 import * as fs from 'fs';
+import * as path from 'path';
+
 import { GenerateScheme, Rules } from '../interfaces';
 import { duplicated, error, success } from '../utils/log';
 
@@ -6,9 +8,8 @@ export function generateScheme(options: GenerateScheme) {
     const {
         name,
         author,
-        schemeName,
         settings,
-        distFolder = 'schemes',
+        output,
     } = options;
     const { colors, ui, rules } = settings;
     const { base, ...rest } = colors;
@@ -35,10 +36,12 @@ export function generateScheme(options: GenerateScheme) {
         });
     });
 
-    fs.mkdir(distFolder, () => {
+    // eslint-disable-next-line no-undef
+    const dist = output.path || path.resolve('schemes');
+    fs.mkdir(dist, () => {
         try {
             fs.writeFileSync(
-                `${distFolder}/${schemeName}.sublime-color-scheme`,
+                `${dist}/${output.filename}.sublime-color-scheme`,
                 JSON.stringify(
                     {
                         name,
@@ -51,7 +54,7 @@ export function generateScheme(options: GenerateScheme) {
                     4
                 )
             );
-            success(schemeName, distFolder);
+            success(output.filename, output.path || 'schemes');
         } catch (e) {
             error(e);
         }

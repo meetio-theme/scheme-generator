@@ -49,6 +49,8 @@ const settings: SchemeSetting = {
 generateScheme({
     name: 'Meetio Scheme Example',
     author: 'Mauro Reis Vieira <mauroreisvieira@gmail.com>',
-    schemeName: 'Meetio Scheme Example',
+    output: {
+        filename: 'Meetio Scheme Example',
+    },
     settings,
 });

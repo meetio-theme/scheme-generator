@@ -86,7 +86,9 @@ const settings: SchemeSetting = {
 generateScheme({
     name: 'Scheme Example',
     author: 'Mauro Reis Vieira <mauroreisvieira@gmail.com>',
-    schemeName: 'Scheme Example',
+    output: {
+        filename: 'Scheme Example',
+    },
     settings,
 });
 ```
