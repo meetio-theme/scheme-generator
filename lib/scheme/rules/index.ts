@@ -2,6 +2,7 @@ import { UI } from '../../interfaces';
 
 export { default as comment } from './common/comment';
 export { default as constant } from './common/constant';
+export { default as diff } from './common/diff';
 export { default as entity } from './common/entity';
 export { default as invalid } from './common/invalid';
 export { default as keyword } from './common/keyword';
@@ -16,7 +17,6 @@ export { default as text } from './common/text';
 export { default as variable } from './common/variable';
 
 export { default as css } from './languages/css';
-export { default as diff } from './languages/diff';
 export { default as html } from './languages/html';
 export { default as git } from './languages/git';
 export { default as js } from './languages/js';

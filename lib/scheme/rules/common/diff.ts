@@ -3,28 +3,28 @@ export default [
         name: 'DIFF - Deleted',
         scope: ['diff.deleted'],
         settings: {
-            background: 'var(diffDeleted)'
+            background: 'color(var(diffDeleted) alpha(0.25))'
         },
     },
     {
         name: 'DIFF - Deleted Char',
         scope: ['diff.deleted.char'],
         settings: {
-            background: 'var(diffDeleted)'
+            background: 'color(var(diffDeleted) alpha(0.25))'
         },
     },
     {
         name: 'DIFF - Inserted',
         scope: ['diff.inserted'],
         settings: {
-            background: 'var(diffAdded)'
+            background: 'color(var(diffAdded) alpha(0.25))'
         },
     },
     {
         name: 'DIFF - Inserted Char',
         scope: ['diff.inserted.char'],
         settings: {
-            background: 'var(diffAdded)'
+            background: 'color(var(diffAdded) alpha(0.25))'
         },
     },
 ];

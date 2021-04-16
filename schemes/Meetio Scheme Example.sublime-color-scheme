@@ -593,22 +593,22 @@
         {
             "name": "DIFF - Deleted",
             "scope": "diff.deleted",
-            "background": "var(diffDeleted)"
+            "background": "color(var(diffDeleted) alpha(0.25))"
         },
         {
             "name": "DIFF - Deleted Char",
             "scope": "diff.deleted.char",
-            "background": "var(diffDeleted)"
+            "background": "color(var(diffDeleted) alpha(0.25))"
         },
         {
             "name": "DIFF - Inserted",
             "scope": "diff.inserted",
-            "background": "var(diffAdded)"
+            "background": "color(var(diffAdded) alpha(0.25))"
         },
         {
             "name": "DIFF - Inserted Char",
             "scope": "diff.inserted.char",
-            "background": "var(diffAdded)"
+            "background": "color(var(diffAdded) alpha(0.25))"
         },
         {
             "name": "HTML - Attribute name ID",
