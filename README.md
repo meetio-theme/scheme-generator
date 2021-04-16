@@ -117,7 +117,7 @@ const { ui, ...rest } = options;
 
 const settings: SchemeSetting = {
     colors: { ... },
-    ui: ui,
+    ui,
     rules: [].concat.apply([], Object.values(rest).map(item => item)),
 };
 ```
