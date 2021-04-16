@@ -1,31 +1,31 @@
 import { UI } from '../../interfaces';
 
-import comment from './common/comment';
-import constant from './common/constant';
-import entity from './common/entity';
-import invalid from './common/invalid';
-import keyword from './common/keyword';
-import markup from './common/markup';
-import meta from './common/meta';
-import punctuation from './common/punctuation';
-import source from './common/source';
-import storage from './common/storage';
-import string from './common/string';
-import support from './common/support';
-import text from './common/text';
-import variable from './common/variable';
+export { default as comment } from './common/comment';
+export { default as constant } from './common/constant';
+export { default as entity } from './common/entity';
+export { default as invalid } from './common/invalid';
+export { default as keyword } from './common/keyword';
+export { default as markup } from './common/markup';
+export { default as meta } from './common/meta';
+export { default as punctuation } from './common/punctuation';
+export { default as source } from './common/source';
+export { default as storage } from './common/storage';
+export { default as string } from './common/string';
+export { default as support } from './common/support';
+export { default as text } from './common/text';
+export { default as variable } from './common/variable';
 
-import CSS from './languages/css';
-import diff from './languages/diff';
-import html from './languages/html';
-import git from './languages/git';
-import js from './languages/js';
-import json from './languages/json';
-import jsx from './languages/jsx';
-import python from './languages/python';
-import vue from './languages/vue';
+export { default as css } from './languages/css';
+export { default as diff } from './languages/diff';
+export { default as html } from './languages/html';
+export { default as git } from './languages/git';
+export { default as js } from './languages/js';
+export { default as json } from './languages/json';
+export { default as jsx } from './languages/jsx';
+export { default as python } from './languages/python';
+export { default as vue } from './languages/vue';
 
-export const defaultGlobals: UI = {
+export const ui: UI = {
     accent: 'var(accent)',
     active_guide: 'var(cyan)',
     background: 'var(background)',
@@ -60,29 +60,3 @@ export const defaultGlobals: UI = {
     tags_foreground: 'var(cyan)',
     tags_options: 'underline',
 };
-
-export const defaultRules = [
-    comment,
-    constant,
-    entity,
-    invalid,
-    keyword,
-    markup,
-    meta,
-    punctuation,
-    source,
-    storage,
-    string,
-    support,
-    text,
-    variable,
-    html,
-    css,
-    diff,
-    git,
-    js,
-    json,
-    jsx,
-    python,
-    vue,
-];

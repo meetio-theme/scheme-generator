@@ -48,7 +48,7 @@
         "line_diff_added": "var(diffAdded)",
         "line_diff_deleted": "var(diffDeleted)",
         "line_diff_modified": "var(diffModified)",
-        "line_diff_width": "2",
+        "line_diff_width": "5",
         "line_highlight": "#00000040",
         "misspelling": "var(blue)",
         "selection": "#80CBC420",
@@ -571,17 +571,6 @@
             "foreground": "var(yellow)"
         },
         {
-            "name": "HTML - Attribute name ID",
-            "scope": "meta.attribute-with-value.id. entity.other.attribute-name.id",
-            "foreground": "var(purple)"
-        },
-        {
-            "name": "HTML - Attribute name ID",
-            "scope": "meta.attribute-with-value.id. string.quoted.double. meta.toc-list.id.",
-            "foreground": "var(green)",
-            "font_style": "normal"
-        },
-        {
             "name": "CSS - Attribute name ID",
             "scope": "entity.other.attribute-name.id",
             "foreground": "var(orange)"
@@ -620,6 +609,17 @@
             "name": "DIFF - Inserted Char",
             "scope": "diff.inserted.char",
             "background": "var(diffAdded)"
+        },
+        {
+            "name": "HTML - Attribute name ID",
+            "scope": "meta.attribute-with-value.id. entity.other.attribute-name.id",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "HTML - Attribute name ID",
+            "scope": "meta.attribute-with-value.id. string.quoted.double. meta.toc-list.id.",
+            "foreground": "var(green)",
+            "font_style": "normal"
         },
         {
             "name": "GIT - Text",

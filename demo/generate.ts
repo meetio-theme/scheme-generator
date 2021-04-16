@@ -1,6 +1,8 @@
-import { generateScheme, ISchemeSetting } from '../dist/index';
+import { SchemeSetting, generateScheme, options } from '../dist/index';
 
-const settings: ISchemeSetting = {
+const { ui, ...rest } = options;
+
+const settings: SchemeSetting = {
     colors: {
         accent: '#80CBC4',
         cursor: '#FFCC00',
@@ -28,16 +30,20 @@ const settings: ISchemeSetting = {
         },
     },
     ui: {
-        tags_options: 'underline',
-        brackets_options: 'underline, glow',
-        line_highlight: '#00000040',
-        selection: '#80CBC420',
-        gutter_foreground: '#37474F',
-        shadow: '#00000030',
-        find_highlight: '#FFCC00',
-        inactive_selection: '#00000030',
+        ...ui,
+        ...{
+            line_diff_width: '5',
+            tags_options: 'underline',
+            brackets_options: 'underline, glow',
+            line_highlight: '#00000040',
+            selection: '#80CBC420',
+            gutter_foreground: '#37474F',
+            shadow: '#00000030',
+            find_highlight: '#FFCC00',
+            inactive_selection: '#00000030',
+        },
     },
-    rules: [],
+    rules: [].concat.apply([], Object.values(rest).map(item => item)),
 };
 
 generateScheme({

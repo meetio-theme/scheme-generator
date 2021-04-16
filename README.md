@@ -15,7 +15,7 @@ npm i @meetio/scheme-generator -D
 yarn add @meetio/scheme-generator
 ```
 
-In addition to the base settings, `ISchemeSetting` provides more options for `colors`, `ui`, `rules` and `useDefaultRules`.
+In addition to the base settings, `SchemeSetting` provides more options for `colors`, `ui`, `rules`.
 There is also an overrides property, which allows you to set any color key from the [Color Scheme Reference](https://www.sublimetext.com/docs/3/color_schemes.html) directly.
 
 ### Example
@@ -23,58 +23,61 @@ There is also an overrides property, which allows you to set any color key from 
 This is all that's needed to generate a great looking theme:
 
 ```ts
-import { generateScheme, ISchemeSetting } from '@meetio/scheme-generator';
+import {
+    generateScheme,
+    SchemeSetting,
+    options,
+} from '@meetio/scheme-generator';
 
-const settings: ISchemeSetting = {
+const { ui } = options;
+
+const settings: SchemeSetting = {
     colors: {
-        accent: '#80cbc4',
-        cursor: '#ffcc00',
-        foreground: '#eeffff',
+        accent: '#80CBC4',
+        cursor: '#FFCC00',
+        foreground: '#EEFFFF',
         background: '#263238',
-        comments: '#546e7a',
-        deprecated: '#ffc777a1',
-        invalid: '#d46c6c66',
-        diffAdded: '#addb67',
-        diffModified: '#e2b93d',
-        diffDeleted: '#ef5350',
+        comments: '#546E7A',
+        deprecated: '#FFC777A1',
+        invalid: '#D46C6C66',
+        diffAdded: '#ADDB67',
+        diffModified: '#E2B93D',
+        diffDeleted: '#EF5350',
         base: {
-            white: '#ffffff',
+            white: '#FFFFFF',
             black: '#000000',
-            red: '#f07178',
-            orange: '#f78c6c',
-            yellow: '#ffcb6b',
-            green: '#c3e88d',
-            cyan: '#89ddff',
-            blue: '#82aaff',
-            purple: '#c792ea',
-            brown: '#916b53',
-            pink: '#ff9cac',
-            violet: '#bb80b3',
+            red: '#F07178',
+            orange: '#F78C6C',
+            yellow: '#FFCB6B',
+            green: '#C3E88D',
+            cyan: '#89DDFF',
+            blue: '#82AAFF',
+            purple: '#C792EA',
+            brown: '#916B53',
+            pink: '#FF9CAC',
+            violet: '#BB80B3',
         },
     },
     ui: {
-        tags_options: 'underline',
-        brackets_options: 'underline, glow',
-        line_highlight: '#00000040',
-        selection: '#80CBC420',
-        gutter_foreground: '#37474F',
-        shadow: '#00000030',
-        find_highlight: '#FFCC00',
-        inactive_selection: '#00000030',
+        ...ui,
+        ...{
+            line_diff_width: '3',
+            brackets_options: 'underline, glow',
+        },
     },
     rules: [
         {
-            name: "[SublimeLinter] Error",
-            scope: ["sublimelinter.mark.error"],
+            name: '[SublimeLinter] Error',
+            scope: ['sublimelinter.mark.error'],
             settings: {
-                foreground: "var(invalid)",
+                foreground: 'var(invalid)',
             },
         },
         {
-            name: "[SublimeLinter] Gutter mark",
-            scope: ["sublimelinter.gutter-mark"],
+            name: '[SublimeLinter] Gutter mark',
+            scope: ['sublimelinter.gutter-mark'],
             settings: {
-                foreground: "var(blue)",
+                foreground: 'var(blue)',
             },
         },
     ],
@@ -93,16 +96,32 @@ generateScheme({
 Support below means that the standard Sublime Text grammar has explicit support for the languages.
 Other languages will probably still look alright but there is no guarantee that they will.
 
--   CSS
--   SASS/SCSS
+-   CSS/SASS/SCSS
 -   HTML
 -   JSON
--   JavaScript
--   TypeScript
+-   JavaScript/JSX
+-   TypeScript/TSX
 -   Markdown
 -   SQL
 -   PHP
 -   Python
+-   Vue
+
+#### Import default syntax:
+
+```ts
+import { generateScheme, SchemeSetting, options } from '@meetio/scheme-generator';
+
+// options contains default styles for syntax scopes.
+const { ui, ...rest } = options;
+
+const settings: SchemeSetting = {
+    colors: { ... },
+    ui: ui,
+    rules: [].concat.apply([], Object.values(rest).map(item => item)),
+};
+```
+
 
 ### Development
 

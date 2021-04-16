@@ -1,3 +1,11 @@
-export { Colors, ColorsBase, SchemeSettng, Rules, UI } from './interfaces';
-export { defaultRules } from './scheme/rules';
+import * as options from './scheme/rules';
+export {
+    Base,
+    Colors,
+    Rules,
+    UI,
+    SchemeSetting,
+    GenerateScheme,
+} from './interfaces';
 export { generateScheme } from './scheme/schemeGenerator';
+export { options };

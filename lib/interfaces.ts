@@ -30,8 +30,8 @@ export interface Colors {
 
 export interface Rules {
   name?: string;
-  scope: string[];
-  settings: {
+  scope?: string[];
+  settings?: {
     foreground?: string;
     background?: string;
     foreground_adjust?: string;
@@ -137,7 +137,6 @@ export interface SchemeSetting {
   colors: Colors;
   ui?: UI;
   rules?: Rules[];
-  useDefaultRules?: boolean;
 }
 
 export interface GenerateScheme {

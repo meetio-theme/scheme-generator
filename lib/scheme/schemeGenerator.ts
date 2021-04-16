@@ -1,28 +1,29 @@
-/* eslint-disable no-undef */
 import * as fs from 'fs';
 import { GenerateScheme, Rules } from '../interfaces';
 import { duplicated, error, success } from '../utils/log';
-import { defaultGlobals, defaultRules } from './rules';
 
 export function generateScheme(options: GenerateScheme) {
-    const { name, author, schemeName, settings, distFolder = 'schemes' } = options;
-    const { colors, ui, rules, useDefaultRules = true } = settings;
+    const {
+        name,
+        author,
+        schemeName,
+        settings,
+        distFolder = 'schemes',
+    } = options;
+    const { colors, ui, rules } = settings;
     const { base, ...rest } = colors;
+
     const allRules: Array<{ name: string; scope: string }> = [];
-    const allScopes = new Set();
-    let spread = [rules];
+    // eslint-disable-next-line no-undef
+    const scopes = new Set();
 
-    if (useDefaultRules) {
-        spread = [...defaultRules, [...rules]];
-    }
-
-    spread.forEach((rule: Rules[]) => {
+    [rules].forEach((rule: Rules[]) => {
         rule.forEach((item: Rules) => {
             item.scope.forEach((i: string) => {
-                if (allScopes.has(i)) {
+                if (scopes.has(i)) {
                     duplicated(i, item.name);
                 }
-                allScopes.add(i);
+                scopes.add(i);
             });
 
             allRules.push({
@@ -43,7 +44,7 @@ export function generateScheme(options: GenerateScheme) {
                         name,
                         author,
                         variables: { ...rest, ...base },
-                        globals: Object.assign(defaultGlobals, ui),
+                        globals: ui,
                         rules: allRules,
                     },
                     null,
