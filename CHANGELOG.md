@@ -1,3 +1,31 @@
+# [3.0.0](https://github.com/meetio-theme/scheme-generator/compare/v2.0.2...v3.0.0) (2021-04-16)
+
+
+### Bug Fixes
+
+* add `output` option ([7060576](https://github.com/meetio-theme/scheme-generator/commit/7060576eb9d033e183692ad3a5c6f3fecaeedcfe))
+
+
+### Features
+
+* change lib ([44c079f](https://github.com/meetio-theme/scheme-generator/commit/44c079fcc9dee060c07bdcfaf1fe2ecbabc77f14))
+
+
+### BREAKING CHANGES
+
+* remove `schemeName` and `distFolder`
+
+
+
+## [2.0.2](https://github.com/meetio-theme/scheme-generator/compare/v2.0.1...v2.0.2) (2021-04-15)
+
+
+### Bug Fixes
+
+* diff background color ([e0daa96](https://github.com/meetio-theme/scheme-generator/commit/e0daa96a0f604382041add2591e58042ee2b6bc5))
+
+
+
 ## [2.0.2](https://github.com/meetio-theme/scheme-generator/compare/v2.0.1...v2.0.2) (2021-04-15)
 
 
