@@ -1,3 +1,33 @@
+## [3.0.1](https://github.com/meetio-theme/scheme-generator/compare/v3.0.0...v3.0.1) (2021-04-16)
+
+
+### Bug Fixes
+
+* log color ([aa8cceb](https://github.com/meetio-theme/scheme-generator/commit/aa8cceb6202e025909242c6f34ae885ea853673a))
+* move logic to check duplicated scopes ([62dea2d](https://github.com/meetio-theme/scheme-generator/commit/62dea2dbb29eb26575bd51dcd94467d814cfbe46))
+* opacity on diff ([785aa61](https://github.com/meetio-theme/scheme-generator/commit/785aa6161f1a55cc9a7463e85821c3741db70be4))
+
+
+
+# [3.0.0](https://github.com/meetio-theme/scheme-generator/compare/v2.0.2...v3.0.0) (2021-04-16)
+
+
+### Bug Fixes
+
+* add `output` option ([7060576](https://github.com/meetio-theme/scheme-generator/commit/7060576eb9d033e183692ad3a5c6f3fecaeedcfe))
+
+
+### Features
+
+* change lib ([44c079f](https://github.com/meetio-theme/scheme-generator/commit/44c079fcc9dee060c07bdcfaf1fe2ecbabc77f14))
+
+
+### BREAKING CHANGES
+
+* remove `schemeName` and `distFolder`
+
+
+
 # [3.0.0](https://github.com/meetio-theme/scheme-generator/compare/v2.0.2...v3.0.0) (2021-04-16)
 
 
