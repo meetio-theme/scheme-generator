@@ -15,17 +15,17 @@ export interface Base {
 }
 
 export interface Colors {
-    accent: string;
-    cursor: string;
+    accent?: string;
+    cursor?: string;
     foreground: string;
     background: string;
-    comments: string;
-    invalid: string;
-    deprecated: string;
-    diffAdded: string;
-    diffModified: string;
-    diffDeleted: string;
-    base: Base;
+    comments?: string;
+    invalid?: string;
+    deprecated?: string;
+    diffAdded?: string;
+    diffModified?: string;
+    diffDeleted?: string;
+    base?: Base;
 }
 
 export interface Rules {
