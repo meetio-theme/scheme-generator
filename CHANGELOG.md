@@ -1,3 +1,21 @@
+## [3.0.3](https://github.com/meetio-theme/scheme-generator/compare/v3.0.2...v3.0.3) (2021-04-20)
+
+
+### Bug Fixes
+
+* required colors ([82f708d](https://github.com/meetio-theme/scheme-generator/commit/82f708d1b676e8f5c9dba2bb2af3ea194d2b508b))
+
+
+
+## [3.0.2](https://github.com/meetio-theme/scheme-generator/compare/v3.0.1...v3.0.2) (2021-04-16)
+
+
+### Bug Fixes
+
+* alpha value ([3730d8c](https://github.com/meetio-theme/scheme-generator/commit/3730d8c1455b137041b92aac2980a59ced1cbd68))
+
+
+
 ## [3.0.2](https://github.com/meetio-theme/scheme-generator/compare/v3.0.1...v3.0.2) (2021-04-16)
 
 

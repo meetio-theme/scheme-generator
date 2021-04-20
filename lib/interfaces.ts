@@ -15,10 +15,10 @@ export interface Base {
 }
 
 export interface Colors {
-    accent?: string;
-    cursor?: string;
     foreground: string;
     background: string;
+    accent?: string;
+    cursor?: string;
     comments?: string;
     invalid?: string;
     deprecated?: string;
