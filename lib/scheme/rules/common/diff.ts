@@ -1,5 +1,12 @@
 export default [
     {
+        name: 'Message Error',
+        scope: ['message.error'],
+        settings: {
+            background: 'var(red)'
+        },
+    },
+    {
         name: 'DIFF - Deleted',
         scope: ['diff.deleted'],
         settings: {
