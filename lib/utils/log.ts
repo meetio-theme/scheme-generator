@@ -1,25 +1,34 @@
-import chalk from 'chalk';
+import {
+    bgRed,
+    bgGreen,
+    yellow,
+    green,
+    red,
+    blue,
+    bold,
+    underline,
+} from 'nanocolors';
 
 const duplicated = (scope: string, name: string) =>
     console.log(
-        chalk.bold.bgRed(' ‼ERROR‼ ') +
+        bgRed(bold(' ‼ERROR‼ ')) +
             ' － Duplicated scope [' +
-            chalk.bold.green(scope) +
+            green(bold(scope)) +
             '] overwrite by ' +
-            chalk.yellow(name)
+            yellow(name)
     );
 
 const success = (scheme: string, folder: string) => {
     console.log(
-        chalk.bold.bgGreen(' SUCCESS ') +
+        bgGreen(bold(' SUCCESS ')) +
             ' － Scheme ' +
-            chalk.bold.blue(`${scheme}.sublime-color-scheme`) +
+            blue(bold(`${scheme}.sublime-color-scheme`)) +
             ' created in ' +
-            chalk.underline.yellow(folder) +
+            yellow(underline(folder)) +
             ' folder'
     );
 };
 
-const error = (error: string) => console.log(chalk.bold.red(error));
+const error = (error: string) => console.log(red(bold(error)));
 
 export const log = { duplicated, success, error };
