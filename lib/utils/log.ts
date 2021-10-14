@@ -7,7 +7,7 @@ import {
     blue,
     bold,
     underline,
-} from 'nanocolors';
+} from 'picocolors';
 
 const duplicated = (scope: string, name: string) =>
     console.log(
