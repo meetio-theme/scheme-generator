@@ -1,3 +1,16 @@
+# [3.2.0](https://github.com/meetio-theme/scheme-generator/compare/v3.1.1...v3.2.0) (2022-05-25)
+
+
+### Features
+
+* add support for YAML ([cc9360a](https://github.com/meetio-theme/scheme-generator/commit/cc9360ae8bd6b1f6c2903cdfd7b7554169ad6010))
+
+
+
+## [3.1.1](https://github.com/meetio-theme/scheme-generator/compare/v3.1.0...v3.1.1) (2021-10-14)
+
+
+
 ## [3.1.1](https://github.com/meetio-theme/scheme-generator/compare/v3.1.0...v3.1.1) (2021-10-14)
 
 
