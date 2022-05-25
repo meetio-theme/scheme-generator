@@ -24,6 +24,7 @@ export { default as json } from './languages/json';
 export { default as jsx } from './languages/jsx';
 export { default as python } from './languages/python';
 export { default as vue } from './languages/vue';
+export { default as yaml } from './languages/yaml';
 
 export const ui: UI = {
     accent: 'var(accent)',
