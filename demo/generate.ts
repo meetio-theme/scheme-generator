@@ -43,6 +43,7 @@ const settings: SchemeSetting = {
             inactive_selection: '#00000030',
         },
     },
+    // eslint-disable-next-line prefer-spread
     rules: [].concat.apply([], Object.values(rest).map(item => item)),
 };
 

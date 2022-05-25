@@ -20,7 +20,8 @@
         "watch": "tsc -w",
         "build": "tsc && ts-node demo/generate.ts",
         "prettier": "prettier --write \"lib/*.ts?(x)\"",
-        "lint": "eslint \"lib/*.ts\" \"lib/**/*.ts\"",
+        "lint": "eslint . --ext .ts",
+        "lint:fix": "eslint . --ext .ts --fix",
         "changelog": "conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
         "release": "bash scripts/release.sh",
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -31,13 +32,10 @@
         }
     },
     "devDependencies": {
-        "@babel/core": "7.18.2",
-        "@babel/preset-env": "7.18.2",
         "@commitlint/cli": "^17.0.1",
         "@commitlint/config-conventional": "^17.0.0",
         "@typescript-eslint/eslint-plugin": "5.26.0",
         "@typescript-eslint/parser": "5.26.0",
-        "babel-eslint": "^10.0.3",
         "conventional-changelog-cli": "^2.2.2",
         "eslint": "8.16.0",
         "husky": "^8.0.1",
