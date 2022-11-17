@@ -47,6 +47,14 @@ export interface Base {
     violet?: string;
     white?: string;
     yellow?: string;
+    '--redish'?: string;
+    '--orangish'?: string;
+    '--yellowish'?: string;
+    '--greenish'?: string;
+    '--cyanish'?: string;
+    '--bluish'?: string;
+    '--purplish'?: string;
+    '--pinkish'?: string;
 }
 
 export interface Colors {
@@ -66,6 +74,10 @@ export interface Colors {
 export interface Rules {
     /** The (arbitrary) name for the scope rule.*/
     name?: string;
+    /**
+     * Scopes are dotted strings, specified from least-to-most specific.
+     * @link https://www.sublimetext.com/docs/scope_naming.html
+     */
     scope?: string[];
     settings?: {
         /** The text color. */

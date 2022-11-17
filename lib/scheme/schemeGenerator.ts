@@ -48,7 +48,20 @@ export function generateScheme(options: GenerateScheme) {
                     {
                         name,
                         author,
-                        variables: { ...rest, ...base },
+                        variables: {
+                          ...rest,
+                          ...{
+                            "--redish": base.red,
+                            "--orangish": base.orange,
+                            "--yellowish": base.yellow,
+                            "--greenish": base.green,
+                            "--cyanish": base.cyan,
+                            "--bluish": base.blue,
+                            "--purplish": base.purple,
+                            "--pinkish": base.pink,
+                          },
+                          ...base,
+                        },
                         globals: ui,
                         rules: duplicated(rules),
                     },
