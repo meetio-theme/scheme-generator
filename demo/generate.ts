@@ -34,7 +34,7 @@ const settings: SchemeSetting = {
         ...{
             line_diff_width: '5',
             tags_options: 'underline',
-            brackets_options: 'underline, glow',
+            brackets_options: 'glow',
             line_highlight: '#00000040',
             selection: '#80CBC420',
             gutter_foreground: '#37474F',
