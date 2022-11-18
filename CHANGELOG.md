@@ -1,3 +1,22 @@
+# [3.3.0](https://github.com/meetio-theme/scheme-generator/compare/v3.2.0...v3.3.0) (2022-11-18)
+
+
+### Features
+
+* add missed global keys for color schemes ([d3527d3](https://github.com/meetio-theme/scheme-generator/commit/d3527d3a76a054ae45151cafdc439408f06b31b5))
+* add support for `*-ish` colors ([7b09cf2](https://github.com/meetio-theme/scheme-generator/commit/7b09cf29cf72fd71894866874f347b1724ed1d9a))
+
+
+
+# [3.2.0](https://github.com/meetio-theme/scheme-generator/compare/v3.1.1...v3.2.0) (2022-05-25)
+
+
+### Features
+
+* add support for YAML ([cc9360a](https://github.com/meetio-theme/scheme-generator/commit/cc9360ae8bd6b1f6c2903cdfd7b7554169ad6010))
+
+
+
 # [3.2.0](https://github.com/meetio-theme/scheme-generator/compare/v3.1.1...v3.2.0) (2022-05-25)
 
 
