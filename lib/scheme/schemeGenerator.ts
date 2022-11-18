@@ -3,14 +3,12 @@ import * as path from 'path';
 import { GenerateScheme, Rules } from '../interfaces';
 import { log } from '../utils/log';
 
-// eslint-disable-next-line no-undef
 interface ScopeRules extends Omit<Rules, 'scope'> {
     scope: string;
 }
 
 function duplicated(rules: Rules[]): ScopeRules[] {
     const scopeRules: ScopeRules[] = [];
-    // eslint-disable-next-line no-undef
     const scopes = new Set();
 
     [rules].forEach((rule: Rules[]) => {
@@ -43,24 +41,26 @@ export function generateScheme(options: GenerateScheme) {
     fs.mkdir(dist, () => {
         try {
             fs.writeFileSync(
-                `${dist}/${output.filename}${output.extension || '.sublime-color-scheme'}`,
+                `${dist}/${output.filename}${
+                    output.extension || '.sublime-color-scheme'
+                }`,
                 JSON.stringify(
                     {
                         name,
                         author,
                         variables: {
-                          ...rest,
-                          ...{
-                            "--redish": base.red,
-                            "--orangish": base.orange,
-                            "--yellowish": base.yellow,
-                            "--greenish": base.green,
-                            "--cyanish": base.cyan,
-                            "--bluish": base.blue,
-                            "--purplish": base.purple,
-                            "--pinkish": base.pink,
-                          },
-                          ...base,
+                            ...rest,
+                            ...{
+                                '--redish': base.red,
+                                '--orangish': base.orange,
+                                '--yellowish': base.yellow,
+                                '--greenish': base.green,
+                                '--cyanish': base.cyan,
+                                '--bluish': base.blue,
+                                '--purplish': base.purple,
+                                '--pinkish': base.pink,
+                            },
+                            ...base,
                         },
                         globals: ui,
                         rules: duplicated(rules),
