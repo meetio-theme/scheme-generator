@@ -108,8 +108,8 @@ export interface UI {
     block_caret_border?: string;
     /** The color of the underline the block caret is drawn as when overlapping with a selection. (+4086) */
     block_caret_underline?: string;
-    /** The style of corners to use for block carets. Options include: `round` (the default), `cut`` or `square`. (+4086) */
-    block_caret_corner_style?: string;
+    /** The style of corners to use for block carets. Options include: `round` (the default), `cut` or `square`. (+4086) */
+    block_caret_corner_style?: 'round' | 'cut' | 'square';
     /** The radius to use when the `block_caret_corner_style` is `round` or `cut`. (+4086) */
     block_caret_corner_radius?: string;
     /** The background color of the line containing the caret. Only used when the `highlight_line` setting is enabled. */
@@ -118,7 +118,8 @@ export interface UI {
     misspelling?: string;
     /** The color to use for the marker that indicates content has been folded. */
     fold_marker?: string;
-    /** The color of the border drawn around the viewport area of the minimap when the setting `draw_minimap_border` is enabled. Note that the viewport is normally only visible on hover, unless the `always_show_minimap_viewport` setting is enabled.  */
+    /** The color of the border drawn around the viewport area of the minimap when the setting `draw_minimap_border` is enabled.
+     * Note that the viewport is normally only visible on hover, unless the `always_show_minimap_viewport` setting is enabled.  */
     minimap_border?: string;
     /** A color made available for use by the theme. (+4050) */
     accent?: string;
@@ -174,9 +175,11 @@ export interface UI {
     rulers?: string;
     /** The color used to draw indent guides. Only used if the option `"draw_normal"` is present in the setting `indent_guide_options`. */
     guide?: string;
-    /** The color used to draw the indent guides for the indentation levels containing the caret. Only used if the option `"draw_active"` is present in the setting `indent_guide_options`. */
+    /** The color used to draw the indent guides for the indentation levels containing the caret.
+     * Only used if the option `"draw_active"` is present in the setting `indent_guide_options`. */
     active_guide?: string;
-    /** The color used to draw the indent guides for the parent indentation levels of the indentation level containing the caret. Only used if the option `"draw_active"` is present in the setting `indent_guide_options`. */
+    /** The color used to draw the indent guides for the parent indentation levels of the indentation level containing the caret.
+     * Only used if the option `"draw_active"` is present in the setting `indent_guide_options`. */
     stack_guide?: string;
     /** How brackets are highlighted when the caret is next to one: `underline` | `stippled_underline` | `squiggly_underline` | `foreground` | `bold` | `italic` */
     brackets_options?: ValidValues<BracketsOptions>;
