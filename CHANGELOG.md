@@ -1,3 +1,21 @@
+## [3.3.2](https://github.com/meetio-theme/scheme-generator/compare/v3.3.1...v3.3.2) (2022-11-29)
+
+
+### Bug Fixes
+
+* remove override color for `inactive_selection_foreground` and `selection_foreground` ([a82296d](https://github.com/meetio-theme/scheme-generator/commit/a82296d7acc8fda1db8e8513e7d84f4ec2531289))
+
+
+
+## [3.3.1](https://github.com/meetio-theme/scheme-generator/compare/v3.3.0...v3.3.1) (2022-11-19)
+
+
+### Features
+
+* update default `UI` options ([2fae99c](https://github.com/meetio-theme/scheme-generator/commit/2fae99c5595fd4045e12eb2d5147ec7e108e65ea))
+
+
+
 ## [3.3.1](https://github.com/meetio-theme/scheme-generator/compare/v3.3.0...v3.3.1) (2022-11-19)
 
 
