@@ -1,0 +1,4 @@
+*.sublime-color-scheme      linguist-language=JSON-with-Comments
+*.hidden-color-scheme       linguist-language=JSON-with-Comments
+
+*.hidden-tmTheme            linguist-language=XML-Property-List
