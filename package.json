@@ -32,12 +32,12 @@
         }
     },
     "devDependencies": {
-        "@commitlint/cli": "^17.4.2",
-        "@commitlint/config-conventional": "^17.4.2",
-        "@typescript-eslint/eslint-plugin": "5.51.0",
-        "@typescript-eslint/parser": "5.51.0",
+        "@commitlint/cli": "^17.4.3",
+        "@commitlint/config-conventional": "^17.4.3",
+        "@typescript-eslint/eslint-plugin": "5.52.0",
+        "@typescript-eslint/parser": "5.52.0",
         "conventional-changelog-cli": "^2.2.2",
-        "eslint": "8.33.0",
+        "eslint": "8.34.0",
         "husky": "^8.0.3",
         "picocolors": "^1.0.0",
         "prettier": "^2.8.4",
