@@ -14,7 +14,7 @@ export default [
         scope: ['string.query.find-in-files'],
         settings: {
             foreground: 'var(green)',
-            font_style: '',
+            font_style: 'underline bold',
         },
     },
     {
@@ -75,7 +75,7 @@ export default [
         name: 'Better Find Buffer - File name',
         scope: ['entity.name.filename.find-in-files'],
         settings: {
-            foreground: 'var(foreground)',
+            foreground: 'var(white)',
             background: 'var(accent)',
             font_style: 'bold',
         },
