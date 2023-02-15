@@ -1,3 +1,21 @@
+## [3.4.1](https://github.com/meetio-theme/scheme-generator/compare/v3.4.0...v3.4.1) (2023-02-15)
+
+
+### Bug Fixes
+
+* color of foreground filename ([397094f](https://github.com/meetio-theme/scheme-generator/commit/397094f3b960d2f01fae153a4c4d599fc64c343e))
+
+
+
+# [3.4.0](https://github.com/meetio-theme/scheme-generator/compare/v3.3.3...v3.4.0) (2023-02-15)
+
+
+### Features
+
+* add support for `Better Find Buffer` ([48c8516](https://github.com/meetio-theme/scheme-generator/commit/48c8516189e83c08a8e8f2e1be56b96872fb0364))
+
+
+
 # [3.4.0](https://github.com/meetio-theme/scheme-generator/compare/v3.3.3...v3.4.0) (2023-02-15)
 
 
