@@ -107,7 +107,13 @@ Other languages will probably still look alright but there is no guarantee that 
 -   SQL
 -   PHP
 -   Python
+-   YAML
 -   Vue
+-   Git
+
+#### External Plugins Support
+
+- [BetterFindBuffer](https://github.com/aziz/BetterFindBuffer)
 
 #### Import default syntax:
 
