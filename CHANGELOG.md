@@ -1,3 +1,16 @@
+# [3.4.0](https://github.com/meetio-theme/scheme-generator/compare/v3.3.3...v3.4.0) (2023-02-15)
+
+
+### Features
+
+* add support for `Better Find Buffer` ([48c8516](https://github.com/meetio-theme/scheme-generator/commit/48c8516189e83c08a8e8f2e1be56b96872fb0364))
+
+
+
+## [3.3.3](https://github.com/meetio-theme/scheme-generator/compare/v3.3.2...v3.3.3) (2023-02-09)
+
+
+
 ## [3.3.3](https://github.com/meetio-theme/scheme-generator/compare/v3.3.2...v3.3.3) (2023-02-09)
 
 
