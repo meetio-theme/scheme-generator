@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name: 'HTML - Attribute name ID',
@@ -14,4 +16,4 @@ export default [
             font_style: 'normal',
         },
     },
-];
+] as Rules[];

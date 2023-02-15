@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name: 'Message Error',
@@ -34,4 +36,4 @@ export default [
             background: 'color(var(diffAdded) alpha(0.20))'
         },
     },
-];
+] as Rules[];

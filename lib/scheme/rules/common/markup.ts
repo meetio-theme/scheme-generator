@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name: 'MARKUP - Section headings',
@@ -114,4 +116,4 @@ export default [
             foreground: 'var(green)',
         },
     },
-];
+] as Rules[];

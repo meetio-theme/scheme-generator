@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name:
@@ -172,4 +174,4 @@ export default [
             foreground: 'var(pink)',
         },
     },
-];
+] as Rules[];

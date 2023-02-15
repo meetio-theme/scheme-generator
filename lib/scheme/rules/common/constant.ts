@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name: 'CONSTANT - Numeric literals, including integers, floats, etc...',
@@ -58,4 +60,4 @@ export default [
             foreground: 'var(pink)',
         },
     },
-];
+] as Rules[];

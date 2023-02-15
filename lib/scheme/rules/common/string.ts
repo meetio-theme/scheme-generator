@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name: 'STRING - Basic strings use the one',
@@ -74,4 +76,4 @@ export default [
             foreground: 'var(yellow)',
         },
     },
-];
+] as Rules[];

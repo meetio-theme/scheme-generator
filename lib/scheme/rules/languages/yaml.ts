@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name: 'YAML - Key',
@@ -13,4 +15,4 @@ export default [
             foreground: 'var(green)',
         },
     },
-];
+] as Rules[];

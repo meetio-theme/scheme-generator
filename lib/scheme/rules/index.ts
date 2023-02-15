@@ -26,6 +26,8 @@ export { default as python } from './languages/python';
 export { default as vue } from './languages/vue';
 export { default as yaml } from './languages/yaml';
 
+export { default as betterFindBuffer } from './better-find-buffer/index';
+
 export const ui: UI = {
     background: 'var(background)',
     foreground: 'var(foreground)',

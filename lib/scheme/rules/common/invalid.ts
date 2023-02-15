@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name: 'INVALID - Elements that are illegal in a specific context',
@@ -13,4 +15,4 @@ export default [
             foreground: 'var(deprecated)',
         },
     },
-];
+] as Rules[];

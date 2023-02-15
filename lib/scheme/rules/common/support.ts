@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name: 'SUPPORT - Elements provided by a base frameworks',
@@ -28,4 +30,4 @@ export default [
             foreground: 'var(yellow)',
         },
     },
-];
+] as Rules[];

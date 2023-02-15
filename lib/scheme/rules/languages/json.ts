@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name: 'JSON - Key ',
@@ -24,4 +26,4 @@ export default [
             foreground: 'var(orange)',
         },
     },
-];
+] as Rules[];

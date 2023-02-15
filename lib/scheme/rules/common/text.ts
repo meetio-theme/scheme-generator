@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name: 'TEXT - HTML',
@@ -13,4 +15,4 @@ export default [
             foreground: 'var(foreground)',
         },
     },
-];
+] as Rules[];

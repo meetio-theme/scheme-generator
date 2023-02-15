@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name: 'ENTITY - The names of data structures',
@@ -84,4 +86,4 @@ export default [
             foreground: 'var(yellow)',
         },
     },
-];
+] as Rules[];

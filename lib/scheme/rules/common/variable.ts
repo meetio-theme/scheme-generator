@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name: 'VARIABLE - Declaration',
@@ -62,4 +64,4 @@ export default [
             foreground: 'var(yellow)',
         },
     }
-];
+] as Rules[];

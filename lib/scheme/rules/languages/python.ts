@@ -1,3 +1,5 @@
+import { Rules } from "../../../interfaces";
+
 export default [
     {
         name: 'PYTHON - Keyword declaration function',
@@ -34,4 +36,4 @@ export default [
             foreground: 'var(blue)',
         },
     },
-];
+] as Rules[];

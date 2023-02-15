@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name: 'COMMENTS - Single and multi-line comments should use, respectively',
@@ -32,4 +34,4 @@ export default [
             font_style: 'italic',
         },
     },
-];
+] as Rules[];

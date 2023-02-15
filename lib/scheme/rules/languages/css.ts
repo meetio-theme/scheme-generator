@@ -1,6 +1,6 @@
 import { Rules } from '../../../interfaces';
 
-const data: Rules[] =  [
+export default [
     {
         name: 'CSS - Attribute name ID',
         scope: ['entity.other.attribute-name.id'],
@@ -29,6 +29,5 @@ const data: Rules[] =  [
             foreground: 'var(purple)',
         },
     },
-];
+] as Rules[];
 
-export default data;

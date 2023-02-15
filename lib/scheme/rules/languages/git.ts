@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name: 'GIT - Text',
@@ -60,4 +62,4 @@ export default [
             foreground: 'var(red)',
         },
     },
-];
+] as Rules[];

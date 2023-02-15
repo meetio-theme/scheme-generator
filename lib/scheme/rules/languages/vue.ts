@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name: 'VUE - Console, "console"',
@@ -6,4 +8,4 @@ export default [
             foreground: 'var(foreground)',
         },
     },
-];
+] as Rules[];

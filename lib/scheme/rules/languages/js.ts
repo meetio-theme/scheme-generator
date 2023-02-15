@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name: 'JS - Console, "console"',
@@ -20,4 +22,4 @@ export default [
             foreground: 'var(blue)',
         },
     },
-];
+] as Rules[];

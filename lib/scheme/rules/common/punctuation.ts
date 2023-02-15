@@ -1,3 +1,5 @@
+import { Rules } from '../../../interfaces';
+
 export default [
     {
         name: 'PUNCTUATION - Separators such as commas',
@@ -104,4 +106,4 @@ export default [
             foreground: 'var(cyan)',
         },
     },
-];
+] as Rules[];
