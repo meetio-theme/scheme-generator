@@ -1,3 +1,10 @@
+## [3.4.2](https://github.com/meetio-theme/scheme-generator/compare/v3.4.1...v3.4.2) (2023-10-12)
+
+
+### Code Refactoring
+
+* update duplicated function ([4f97455](https://github.com/meetio-theme/scheme-generator/commit/4f9745568e133568d917a3392c536bbf35963ca7))
+
 ## [3.4.1](https://github.com/meetio-theme/scheme-generator/compare/v3.4.0...v3.4.1) (2023-02-15)
 
 
@@ -575,6 +582,3 @@
 * diff ([82bddf0](https://github.com/meetio-theme/scheme-generator/commit/82bddf0))
 * new release ([c4637b7](https://github.com/meetio-theme/scheme-generator/commit/c4637b7))
 * new release ([035eb81](https://github.com/meetio-theme/scheme-generator/commit/035eb81))
-
-
-
