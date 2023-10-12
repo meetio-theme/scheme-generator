@@ -1,6 +1,6 @@
 {
     "name": "@meetio/scheme-generator",
-    "version": "3.4.1",
+    "version": "3.4.2",
     "description": "Easily generate schemes for Sublime Text",
     "main": "dist/index.js",
     "typescript": {
@@ -29,7 +29,7 @@
         "@commitlint/cli": "^17.7.2",
         "@commitlint/config-conventional": "^17.7.0",
         "@types/node": "^20.8.4",
-          "@types/jest": "^29.5.5",
+        "@types/jest": "^29.5.5",
         "@typescript-eslint/eslint-plugin": "6.7.5",
         "@typescript-eslint/parser": "6.7.5",
         "semantic-release": "^22.0.5",
