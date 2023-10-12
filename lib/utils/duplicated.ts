@@ -1,4 +1,4 @@
-import { Rules } from '../interfaces';
+import { Rules } from '../types';
 import { log } from './log';
 
 interface ScopeRules extends Omit<Rules, 'scope'> {

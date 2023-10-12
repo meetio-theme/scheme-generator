@@ -1,4 +1,4 @@
-import { Rules } from '../../../interfaces';
+import { Rules } from '../../../types';
 
 export default [
     {

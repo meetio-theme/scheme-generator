@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { GenerateScheme } from '../interfaces';
+import { GenerateScheme } from '../types';
 import { log, duplicated } from '../utils';
 
 export function generateScheme(options: GenerateScheme) {
