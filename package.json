@@ -23,19 +23,21 @@
         "demo": "ts-node demo/generate.ts",
         "prettier": "prettier --write \"lib/*.ts?(x)\"",
         "lint": "eslint . --ext .ts",
-        "lint:fix": "eslint . --ext .ts --fix",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "jest"
     },
     "devDependencies": {
         "@commitlint/cli": "^17.7.2",
         "@commitlint/config-conventional": "^17.7.0",
         "@types/node": "^20.8.4",
+          "@types/jest": "^29.5.5",
         "@typescript-eslint/eslint-plugin": "6.7.5",
         "@typescript-eslint/parser": "6.7.5",
         "semantic-release": "^22.0.5",
         "semantic-release-config-conventional": "^1.0.1",
         "typescript": "^5.2.2",
+        "jest": "^29.7.0",
         "ts-node": "^10.9.1",
+        "ts-jest": "^29.1.1",
         "eslint": "8.51.0",
         "husky": "^8.0.3",
         "picocolors": "^1.0.0",

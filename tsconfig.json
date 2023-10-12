@@ -13,6 +13,10 @@
         "noImplicitAny": true,
         "resolveJsonModule": true
     },
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "node"
+    },
     "include": ["lib/*.ts", "lib/**/*.ts", "lib/**/**/*.ts"],
     "exclude": ["node_modules", "dist"]
 }

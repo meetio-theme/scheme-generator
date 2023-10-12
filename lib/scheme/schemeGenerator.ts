@@ -1,36 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { GenerateScheme, Rules } from '../interfaces';
-import { log } from '../utils/log';
-
-interface ScopeRules extends Omit<Rules, 'scope'> {
-    scope: string;
-}
-
-function duplicated(rules: Rules[]): ScopeRules[] {
-    const scopeRules: ScopeRules[] = [];
-    const scopes = new Set();
-
-    [rules].forEach((rule: Rules[]) => {
-        rule.forEach((item: Rules) => {
-            item.scope.forEach((i: string) => {
-                if (scopes.has(i)) {
-                    log.duplicated(i, item.name);
-                }
-                scopes.add(i);
-            });
-
-            scopeRules.push({
-                name: item.name,
-                scope: item.scope.toString(),
-            });
-
-            Object.assign(scopeRules[scopeRules.length - 1], item.settings);
-        });
-    });
-
-    return scopeRules;
-}
+import { GenerateScheme } from '../interfaces';
+import { log, duplicated } from '../utils';
 
 export function generateScheme(options: GenerateScheme) {
     const { name, author, settings, output } = options;
