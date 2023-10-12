@@ -15,7 +15,22 @@ describe('duplicated function', () => {
         console.log = originalConsoleLog;
     });
 
-    it('should convert scopes', () => {
+    it('should detect duplicated scopes', () => {
+        const rules = [
+            { name: 'Rule 1', scope: ['scope1', 'scope2'], settings: {} },
+            { name: 'Rule 2', scope: ['scope2', 'scope3'], settings: {} },
+        ];
+
+        const result = duplicated(rules);
+
+        // Ensure the returned result is correct
+        expect(result).toEqual([
+            { name: 'Rule 1', scope: 'scope1,scope2' },
+            { name: 'Rule 2', scope: 'scope2,scope3' },
+        ]);
+    });
+
+    it('should handle non-duplicated scopes correctly', () => {
         const rules = [
             { name: 'Rule 1', scope: ['scope1', 'scope2'], settings: {} },
             { name: 'Rule 2', scope: ['scope3'], settings: {} },
@@ -23,17 +38,13 @@ describe('duplicated function', () => {
 
         const result = duplicated(rules);
 
+        // Ensure console.log was not called since there are no duplicates
+        expect(console.log).not.toHaveBeenCalled();
+
+        // Ensure the returned result is correct
         expect(result).toEqual([
-            {
-                name: 'Rule 1',
-                scope: 'scope1,scope2',
-                settings: {},
-            },
-            {
-                name: 'Rule 2',
-                scope: 'scope3',
-                settings: {},
-            },
+            { name: 'Rule 1', scope: 'scope1,scope2' },
+            { name: 'Rule 2', scope: 'scope3' },
         ]);
     });
 });
