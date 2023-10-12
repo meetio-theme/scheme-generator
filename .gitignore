@@ -12,7 +12,6 @@ dist/
 demo/*.js
 
 # Generated files
-package-lock.json
 npm-debug
 yarn.lock
 yarn-error.log
