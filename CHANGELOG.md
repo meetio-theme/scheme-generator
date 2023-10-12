@@ -1,3 +1,10 @@
+## [3.4.3](https://github.com/meetio-theme/scheme-generator/compare/v3.4.2...v3.4.3) (2023-10-12)
+
+
+### Code Refactoring
+
+* export types and rules ([75a86ea](https://github.com/meetio-theme/scheme-generator/commit/75a86ea212d4c42f9d86a54d78ac31d5ebfe406e))
+
 ## [3.4.2](https://github.com/meetio-theme/scheme-generator/compare/v3.4.1...v3.4.2) (2023-10-12)
 
 
