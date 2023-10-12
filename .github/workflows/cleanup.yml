@@ -1,0 +1,63 @@
+name: Cleanup
+
+on:
+  schedule:
+    # 1. Entry: Minute when the process will be started [0-60]
+    # 2. Entry: Hour when the process will be started [0-23]
+    # 3. Entry: Day of the month when the process will be started [1-28/29/30/31]
+    # 4. Entry: Month of the year when the process will be started [1-12]
+    # 5. Entry: Weekday when the process will be started [0-6] [0 is Sunday]
+    # https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07
+    # https://stackoverflow.com/a/16717986
+    - cron: "0 12 * * 0" # run every sunday at 12am
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Retention days of each workflow"
+        required: true
+        default: "0"
+      minimum_runs:
+        description: "The minimum runs to keep for each workflow"
+        required: true
+        default: "0"
+
+permissions: write-all
+
+concurrency:
+  group: cleanup
+  cancel-in-progress: true
+
+jobs:
+  delete-runs:
+    name: Delete Old Runs
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete Workflows Runs
+        # https://github.com/marketplace/actions/delete-workflow-runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: ${{ inputs.days }}
+          keep_minimum_runs: ${{ inputs.minimum_runs }}
+
+      - name: Purge Obsolete Workflows
+        # https://github.com/otto-de/purge-deprecated-workflow-runs
+        uses: otto-de/purge-deprecated-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          remove-obsolete: false
+          remove-cancelled: true
+          remove-failed: true
+          remove-skipped: true
+
+  clear-caches:
+    name: Clear Caches
+    # https://github.com/marketplace/actions/wipe-github-actions-cache
+    # hhttps://github.com/easimon/wipe-cache/blob/main/action.yml
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wipe Caches
+        uses: easimon/wipe-cache@main

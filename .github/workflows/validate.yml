@@ -1,0 +1,63 @@
+name: Validate
+
+on:
+  push:
+    branches: ["*"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  lint-changes:
+    name: Lint Changes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          cache: npm
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Tests
+        run: npm run test
+
+      - name: Build
+        run: npm run build
+
+      - name: Run Lint
+        run: npm run lint
+
+  lint-commits:
+    name: Lint Commits
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          cache: npm
+
+      - name: Install Dependencies
+        run: npm ci
+
+      # Validate commits from default branch each time the workflow is executed
+      - name: Validate Branch Commits
+        run: "npm exec -- commitlint -f origin/${{ github.event.repository.default_branch }}~0 -t HEAD -V"
+
+      # Validate the last commit from default branch when a new push is made
+      - name: Validate Last Push Commit
+        if: github.event_name == 'push'
+        run: npm exec -- commitlint --from HEAD~1 --to HEAD --verbose
+
+      # Validate the pull request commits each time is created or updated
+      - name: Validate PR Commits
+        if: github.event_name == 'pull_request'
+        run: npm exec -- commitlint --from ${{ github.event.pull_request.head.sha }}~${{ github.event.pull_request.commits }} --to ${{ github.event.pull_request.head.sha }} --verbose
