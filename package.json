@@ -15,11 +15,13 @@
     "scripts": {
         "prepare": "husky install",
         "watch": "tsc -w",
-        "build": "tsc",
-        "demo": "ts-node demo/generate.ts",
-        "prettier": "prettier --write \"lib/*.ts?(x)\"",
+        "build": "npm run clean && tsc",
+        "generate:scheme": "ts-node demo/generate.ts",
+        "prettier": "prettier --write src/**/*.ts",
         "lint": "eslint . --ext .ts",
-        "test": "jest"
+        "test": "jest",
+        "test:coverage": "npm test -- --coverage",
+        "clean": "rm -rf dist"
     },
     "devDependencies": {
         "@commitlint/cli": "^17.7.2",

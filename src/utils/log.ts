@@ -9,7 +9,7 @@ import {
     underline,
 } from 'picocolors';
 
-const duplicated = (scope: string, name: string) =>
+const duplicated = (scope: string, name?: string) =>
     console.log(
         bgRed(bold(' ‼ERROR‼ ')) +
             ' － Duplicated scope [' +
@@ -29,6 +29,9 @@ const success = (scheme: string, folder: string) => {
     );
 };
 
-const error = (error: string) => console.log(red(bold(error)));
+const error = <T>(error?: T) =>
+    typeof error === 'string'
+        ? console.log(red(bold(error)))
+        : console.log(JSON.stringify(error));
 
 export const log = { duplicated, success, error };

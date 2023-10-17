@@ -1,5 +1,10 @@
 # Sublime Text Scheme Generator
 
+Are you tired of the same old color schemes in Sublime Text? Look no further!
+Our repository offers a powerful and user-friendly solution to spice up your coding environment.
+
+Introducing an innovative tool designed to effortlessly generate custom color schemes tailored to your preferences.
+
 [![GitHub tag](https://img.shields.io/github/release/meetio-theme/scheme-generator.svg?style=for-the-badge)](https://github.com/meetio-theme/scheme-generator/releases)
 ![Sublime Version](https://img.shields.io/badge/built_for_sublimetext-3179-e79330?style=for-the-badge&logo=sublime-text)
 [![GitHub Issues](https://img.shields.io/github/issues/meetio-theme/scheme-generator.svg?style=for-the-badge)](https://github.com/meetio-theme/scheme-generator/issues)
@@ -18,7 +23,16 @@ yarn add @meetio/scheme-generator
 In addition to the base settings, `SchemeSetting` provides more options for `colors`, `ui`, `rules`.
 There is also an overrides property, which allows you to set any color key from the [Color Scheme Reference](https://www.sublimetext.com/docs/3/color_schemes.html) directly.
 
-### Example
+## Features
+
+- **Effortless Customization:** Generate custom color schemes tailored to your preferences with ease.
+- **Intuitive Interface:** User-friendly tools to craft visually appealing themes without any hassle.
+- **Versatile Settings:** Fine-tune colors, UI elements, and syntax rules for a perfect match to your coding style.
+- **Simplified Installation:** Seamless integration into your Sublime Text setup using NPM or Yarn.
+- **Wide Language Support:** Explicit support for popular languages like CSS, HTML, JavaScript, and more.
+- **External Plugin Compatibility:** Enhanced experience with plugins like BetterFindBuffer.
+
+## Usage
 
 This is all that's needed to generate a great looking theme:
 
@@ -40,11 +54,11 @@ const colorPalette = {
 };
 
 const uiSettings: UI = {
-   line_diff_width: '3',
+    line_diff_width: '3',
     brackets_options: 'underline, glow',
 };
 
-const mergedRules = Object.values(rules).flatMap(rule => rule);
+const mergedRules = Object.values(rules).flatMap((rule) => rule);
 
 const settings: SchemeSetting = {
     colors: colorPalette,
@@ -63,10 +77,9 @@ generateScheme({
     },
     settings,
 });
-
 ```
 
-### Support
+## Support
 
 Support below means that the standard Sublime Text grammar has explicit support for the languages.
 Other languages will probably still look alright but there is no guarantee that they will.
@@ -84,25 +97,9 @@ Other languages will probably still look alright but there is no guarantee that 
 -   Vue
 -   Git
 
-#### External Plugins Support
+## External Plugins Support
 
-- [BetterFindBuffer](https://github.com/aziz/BetterFindBuffer)
-
-#### Import default syntax:
-
-```ts
-import { generateScheme, SchemeSetting, options } from '@meetio/scheme-generator';
-
-// options contains default styles for syntax scopes.
-const { ui, ...rest } = options;
-
-const settings: SchemeSetting = {
-    colors: { ... },
-    ui,
-    rules: [].concat.apply([], Object.values(rest).map(item => item)),
-};
-```
-
+-   [BetterFindBuffer](https://github.com/aziz/BetterFindBuffer)
 
 ### Development
 

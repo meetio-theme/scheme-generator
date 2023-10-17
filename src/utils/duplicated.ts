@@ -11,16 +11,17 @@ export function duplicated(rules: Rules[]): ScopeRules[] {
 
     [rules].forEach((rule: Rules[]) => {
         rule.forEach((item: Rules) => {
-            item.scope.forEach((i: string) => {
+            item?.scope?.forEach((i: string) => {
                 if (scopes.has(i)) {
                     log.duplicated(i, item.name);
                 }
                 scopes.add(i);
             });
 
+            if (!item.scope) return;
             scopeRules.push({
                 name: item.name,
-                scope: item.scope.toString(),
+                scope: item.scope?.toString(),
             });
 
             Object.assign(scopeRules[scopeRules.length - 1], item.settings);
